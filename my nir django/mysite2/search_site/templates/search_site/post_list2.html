@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD> <TITLE> Визуализация данных</TITLE>
+
+{#    <link rel="stylesheet" href="leaflet/leaflet.css" />#}
+{#<script src="leaflet/leaflet.js"></script> #}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+ <style>
+body{ text-align: center}
+#map {width: 800px; height: 600px; }
+
+</style>
+
+{#    <LINK rel="stylesheet" href="style2.css" type="text/css">#}
+<script>
+function loadIt(theImage){
+  document.getElementById("myImage").src=theImage;
+   }
+</script>
+
+
+</HEAD>
+
+
+<header>
+{% load staticfiles %}
+<H3 style="font: bold 25pt Georgia verdana italic;text-align:center; color:#14126e;margin-top:40px"> Статистика количества учащихся на онлайн курсах по национальности </H3>
+<!-- <p style = "margin-top:-30px; text-align: center"><img  src= "{% static "search_site/заголовок11.png" %}"></p>-->
+</header>
+
+<BODY >
+
+
+    <div id="map"></div>
+
+<script type='text/javascript'>
+
+//Определяем карту, координаты центра и начальный масштаб
+var map = L.map('map').setView([56.326944,75], 2.7);
+//var map = L.map('map').setView([56.326944, 44.0075], 12);
+
+//Добавляем на нашу карту слой OpenStreetMap
+L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a rel="nofollow" href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+</script>
+
+
+
+{% comment %}<div style="di splay:block;height:700px">
+	
+<form style="margin-left:40%; margin-top: 10px;position:relative">
+<input type="button" value= "График" onClick= "loadIt('{% static "search_site/бегемот.jpg" %}')">
+<input type="button" value= "Диаграмма" onClick= "loadIt('{% static "search_site/кот.jpg" %}')">
+</form>
+
+<P style="margin-left:30%;margin-top:0px"> <img ID= "myImage" src= "{% static "search_site/бегемот.jpg" %}"></P>
+
+</div>
+
+<div id="data">
+  <img  src= "diagram.png">
+</div>{% endcomment %}
+
+
+
+
+</BODY>
+</HTML>
+
+
