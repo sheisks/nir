@@ -2,26 +2,23 @@
 <HTML>
 <HEAD> <TITLE> Визуализация данных</TITLE>
 
-{#    <link rel="stylesheet" href="leaflet/leaflet.css" />#}
-{#<script src="leaflet/leaflet.js"></script> #}
+{#<link rel="stylesheet" href="leaflet/leaflet.css" />#}
+{#<script src="./leaflet/leaflet.js"></script>#}
+{#<script src="./leaflet/leaflet.ajax.min.js"></script>#}
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+{#<script src="http://leafletjs.com/examples/choropleth/us-states.js"></script>#}
+<script src="https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json"></script>
 
- <style>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<style>
 body{ text-align: center}
-#map {width: 800px; height: 600px; }
+#map {width: 960px; height: 500px; }
 
 </style>
-
-{#    <LINK rel="stylesheet" href="style2.css" type="text/css">#}
-<script>
-function loadIt(theImage){
-  document.getElementById("myImage").src=theImage;
-   }
-</script>
-
-
 </HEAD>
 
 
@@ -33,43 +30,68 @@ function loadIt(theImage){
 
 <BODY >
 
-
-    <div id="map"></div>
+{#область для отображения карты#}
+<div id="map"></div>
 
 <script type='text/javascript'>
 
-//Определяем карту, координаты центра и начальный масштаб
-var map = L.map('map').setView([56.326944,75], 2.7);
-//var map = L.map('map').setView([56.326944, 44.0075], 12);
+//Определяется карта, координаты центра и начальный масштаб
+//var map = L.map('map').setView([56.326944,75], 2.7);
+var map = L.map('map', {
+    center: [56.326944,75],
+    zoom: 2.7,
+    maxZoom: 4,
+    minZoom: 2,
+    maxBounds:true
+});
 
-//Добавляем на нашу карту слой OpenStreetMap
+//Добавляется на  карту слой OpenStreetMap
 L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a rel="nofollow" href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+function getColor(d) {
+    return d > 1000 ? '#800026' :
+           d > 500  ? '#BD0026' :
+           d > 200  ? '#E31A1C' :
+           d > 100  ? '#FC4E2A' :
+           d > 50   ? '#FD8D3C' :
+           d > 20   ? '#FEB24C' :
+           d > 10   ? '#FED976' :
+                      '#FFEDA0';
+}
+
+function getSomeColor(d) {
+    d = d%8;
+    return d == 0 ? '#800026' :
+           d == 1  ? '#BD0026' :
+           d == 2  ? '#E31A1C' :
+           d == 3  ? '#FC4E2A' :
+           d == 4  ? '#FD8D3C' :
+           d == 5  ? '#FEB24C' :
+           d == 6  ? '#FED976' :
+                      '#FFEDA0';
+}
+
+function style(feature) {
+    return {
+        fillColor: getSiomeColor(feature.properties.ID_1),
+        weight: 2,
+        opacity: 1,
+        color: 'white',
+        dashArray: '3',
+        fillOpacity: 0.7
+    };
+}
+
+
+var geodata = L.geoJSON(statesData, {style: style});
+geodata.addTo(map);
+
 </script>
-
-
-
-{% comment %}<div style="di splay:block;height:700px">
-	
-<form style="margin-left:40%; margin-top: 10px;position:relative">
-<input type="button" value= "График" onClick= "loadIt('{% static "search_site/бегемот.jpg" %}')">
-<input type="button" value= "Диаграмма" onClick= "loadIt('{% static "search_site/кот.jpg" %}')">
-</form>
-
-<P style="margin-left:30%;margin-top:0px"> <img ID= "myImage" src= "{% static "search_site/бегемот.jpg" %}"></P>
-
-</div>
-
-<div id="data">
-  <img  src= "diagram.png">
-</div>{% endcomment %}
 
 
 
 
 </BODY>
 </HTML>
-
-
