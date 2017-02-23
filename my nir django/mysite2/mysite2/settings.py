@@ -70,7 +70,15 @@ TEMPLATES = [
 ]
 
 TEMPLATE_DIRS = [
-	'C:\\NIR\\mysite2\\search_site\\templates\\search_site'
+    os.path.join(
+        os.path.dirname(os.path.realpath(__file__)),
+        '..',
+        'mysite2',
+        'search_site',
+        'templates'
+        'search_site'
+    )
+	#'C:\\NIR\\mysite2\\search_site\\templates\\search_site'
 ]
 
 WSGI_APPLICATION = 'mysite2.wsgi.application'
