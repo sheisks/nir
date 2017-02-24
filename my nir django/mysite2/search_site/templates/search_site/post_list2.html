@@ -1,15 +1,11 @@
 <!DOCTYPE HTML>
 <HTML>
 <HEAD> <TITLE> Визуализация данных</TITLE>
-    
+
 {% load staticfiles %}
 
-{#<link rel="stylesheet" href="leaflet/leaflet.css" />#}
-{#<script src="./leaflet/leaflet.js"></script>#}
-{#<script src="./leaflet/leaflet.ajax.min.js"></script>#}
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="{% static 'leaflet/leaflet.css' %}" />
+<script src="{% static 'leaflet/leaflet.js' %}"></script>
 <script src="{% static 'search_site/loadJSON.js' %}"></script>
 <script src="https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json"></script>
 
