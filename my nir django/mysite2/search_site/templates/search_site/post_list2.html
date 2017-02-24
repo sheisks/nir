@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <HTML>
 <HEAD> <TITLE> Визуализация данных</TITLE>
+    
+{% load staticfiles %}
 
 {#<link rel="stylesheet" href="leaflet/leaflet.css" />#}
 {#<script src="./leaflet/leaflet.js"></script>#}
@@ -8,7 +10,7 @@
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-{#<script src="http://leafletjs.com/examples/choropleth/us-states.js"></script>#}
+<script src="{% static 'search_site/loadJSON.js' %}"></script>
 <script src="https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json"></script>
 
 
@@ -25,7 +27,6 @@ body{ text-align: center}
 <header>
 {% load staticfiles %}
 <H3 style="font: bold 25pt Georgia verdana italic;text-align:center; color:#14126e;margin-top:40px"> Статистика количества учащихся на онлайн курсах по национальности </H3>
-<!-- <p style = "margin-top:-30px; text-align: center"><img  src= "{% static "search_site/заголовок11.png" %}"></p>-->
 </header>
 
 <BODY >
