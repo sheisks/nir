@@ -1,0 +1,11 @@
+var peopleData = {
+  "Karachay-Cherkess": {
+    "people": 100
+  },
+  "Kaluga": {
+    "people": 800
+  },
+  "Leningrad": {
+    "people": 9000
+  }
+}
