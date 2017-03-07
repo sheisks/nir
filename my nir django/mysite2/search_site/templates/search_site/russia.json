@@ -1,0 +1,36 @@
+peopleData =[{
+  "type": "Feature",
+  "properties": {
+    "name": "Karachay-Cherkess",
+    "people": 100
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Kaluga",
+    "people": 800
+  }
+}
+  {
+  "type": "Feature",
+  "properties": {
+    "name": "Kaluzhskaya Oblast",
+    "people": 50
+  }
+}
+  {
+  "type": "Feature",
+  "properties": {
+    "name": "Kurskaya Oblast",
+    "people": 200
+  }
+}
+  {
+  "type": "Feature",
+  "properties": {
+    "name": "Saint Petersburg|Sankt-Peterburgskaya G.|Leningradskaya Oblast",
+    "people": 1000
+  }
+}
+]
