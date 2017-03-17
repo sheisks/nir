@@ -9,11 +9,10 @@
 {% comment %}<script src="./leaflet/leaflet.ajax.min.js"></script>{% endcomment %}
 
 <script src="{% static 'search_site/loadJSON.js' %}"></script>
-<script src="{% static 'search_site/russia.json' %}"></script>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="{% static 'search_site/russia.js' %}"></script>
+<link rel="stylesheet" href="{% static 'leaflet/leaflet.css' %}" />
+<script src="{% static 'leaflet/leaflet.js' %}"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json"></script>
 
 <style>
 body{ text-align: center}
@@ -52,9 +51,8 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-function getSomeColor(region, people) {
-    if (region in people) {
-        d = people.region.people;
+function getSomeColor(d) {
+    if (typeof d != 'undefined') {
         return d >= 1000 ? '#800026' :
                d >= 100  ? '#BD0026' :
                            '#E31A1C';
@@ -65,45 +63,34 @@ function getSomeColor(region, people) {
                //           '#FFEDA0';
     }
     else
-        return '#FFEDA0';
+        return null;
 
 }
 
 function style(feature) {
-
-    if (people in feature.properties)
-
-        return {
-            fillColor: getSomeColor(feature.properties.NAME_1, peopleData),
-            weight: 2,
-            opacity: 1,
-            color: 'white',
-            dashArray: '3',
-            fillOpacity: 0.7
-        };
-    else
-        return {
-            fillColor: null,
-            weight: 2,
-            opacity: 1,
-            color: 'white',
-            dashArray: '3',
-            fillOpacity: 0.7
-        };
+    return {
+        fillColor: getSomeColor(feature.properties.people),
+        weight: 2,
+        opacity: 1,
+        color: 'white',
+        dashArray: '3',
+        fillOpacity: 0.7
+    };
 }
 
 
 var regionData = loadJSONsync("https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json");
 
-for (index = 0; index < peopleData.length; ++index) {
+for (var i=0; i < regionData.features.length; i++) {
     //ключевное поле
-    key = peopleData[index].key;
+    var key = regionData.features[i].properties.ID_1;
 
     // ищем регион
-    i = find( key, regionData);
-
-    // добавляем значение
-    regionData[i].properties.people = peopleData[index].value;
+    if (key in peopleData) {
+        // добавляем значение
+        regionData.features[i].properties['people'] = peopleData[key].value;
+        console.log(key);
+    }
 }
 
 
