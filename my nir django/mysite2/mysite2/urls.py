@@ -19,8 +19,9 @@ from django.contrib import admin
 from search_site import views, forms # наз
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
-	url(r'^index', views.index), # при вводе в браузере адреса .../post_form будет отрабатывать класс PostForm из файлв forms
-	url(r'^html', views.html), # при вводе в браузере адреса .../post_form будет отрабатывать класс PostForm из файлв forms
-	url(r'^form', views.myform), # при вводе в браузере адреса .../post_form будет отрабатывать класс PostForm из файлв forms
+        url(r'^admin/', include(admin.site.urls)),
+	url(r'^index', views.index), # при вводе в браузере адреса .../index будет отрабатывать класс PostForm из файлв forms
+	url(r'^post_list2.html', views.html), # при вводе в браузере адреса .../form будет отрабатывать класс PostForm из файла post_list2
+	url(r'^form', views.myform), # при вводе в браузере адреса .../myform будет отрабатывать класс PostForm из файлв forms
+        url(r'^chart1.html', views.html_page), # при вводе в браузере адреса .../form будет отрабатывать класс PostForm из файла chart1
 ]
