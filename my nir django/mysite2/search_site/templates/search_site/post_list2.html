@@ -14,15 +14,9 @@
 <script src="{% static 'search_site/loadJSON.js' %}"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
-{% comment %}
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-<script src="https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json"></script>{% endcomment %}
-
 
 <style>
-#map {float:left; width: 960px; height: 500px; }
-{##map {float:left; width: 60%; height: auto }#}
+#map {float:left; width: 50%; height: 500px; }
 
 .info {
     padding: 6px 8px;
@@ -48,7 +42,11 @@
     margin-right: 8px;
     opacity: 0.7;
 }
+body{background-color:white ; width:100%}
 
+ #header1 {width:100%;
+          height:50px;
+         display: block;}
 </style>
 </HEAD>
 
@@ -57,6 +55,46 @@
 <H3 style="font: bold 25pt Georgia verdana italic;text-align:center; color:#14126e;margin-top:40px"> Информация об online-курсах </H3>
 </header>
 
+<header1>
+<div id="header1">
+
+<DiV id="menu" STYLE="position:static;width:40%; margin-top:10px;align: center; text-align:center;margin-left:40%">
+	<TABLE style="BORDER:0; border-spacing:10px; WIDTH:60%; HIGHT:30px" >
+	<TR>
+	<TD style="font-size:20px;border-bottom:solid" class=mainMenu id="m1" onclick=Mmclick('post_list2.html') onmouseover=Mmover(1) onmouseout=Mmout(1)>&nbsp;Карта&nbsp</TD>
+        <TD style="font-size:20px;border-bottom:solid" class=mainMenu id="m2" onclick=Mmclick('chart1.html') onmouseover=Mmover(2) onmouseout=Mmout(2)>&nbsp;Диаграммы&nbsp</TD>
+   </TR>
+	</TABLE>
+	</DIV>
+
+</div>
+
+
+<SCRIPT>
+	//**** Выделение элементов главного меню при наведении указателя мыши ****//
+	function Mmover(x)
+	{
+		eval("document.all['m'+x].style.backgroundColor='#dddddd'")
+	}
+
+	//**** снятие выделения элементов главного меню при отведении указателя мыши ****//
+	function Mmout(x)
+	{
+		eval("document.all['m'+x].style.backgroundColor='#898989'")
+	}
+
+	//**** если в качестве параметра передается не URL, а код на JavaScript то его следует передавать в формате 'javascript:<код>' ****//
+	function Mmclick(s)
+	{
+		if(s.indexOf('javascript:')==0) eval(s)
+		else if (s != '') window.location.href=s
+
+	}
+
+</SCRIPT>
+</header1>
+<hr><br> 
+ 
 
 <BODY >
 
@@ -68,8 +106,8 @@
 //Определяется карта, координаты центра и начальный масштаб
 
 var map = L.map('map', {
-    center: [56.326944,75],
-    zoom: 2.7,
+    center: [62,85],
+    zoom: 2,
     maxZoom: 5,
     minZoom: 1,
     maxBounds:true
