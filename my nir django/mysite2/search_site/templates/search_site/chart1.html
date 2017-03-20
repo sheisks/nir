@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+<style>
+    #header1 {width:100%;
+          height:50px;
+         display: block;}
+
+</style>
+</head>
+
+
+</HEAD>
+
+
+<header>
+<H3 style="font: bold 25pt Georgia verdana italic;text-align:center; color:#14126e;margin-top:40px"> Информация об online-курсах </H3>
+</header>
+
+<header1>
+<div id="header1">
+
+<DiV id="menu" STYLE="position:static;width:40%; margin-top:10px;align: center; text-align:center;margin-left:40%">
+	<TABLE style="BORDER:0; border-spacing:10px; WIDTH:60%; HIGHT:30px" >
+	<TR>
+	<TD style="font-size:20px;border-bottom:solid" class=mainMenu id="m1" onclick=Mmclick('post_list2.html') onmouseover=Mmover(1) onmouseout=Mmout(1)>&nbsp;Карта&nbsp</TD>
+        <TD style="font-size:20px;border-bottom:solid" class=mainMenu id="m2" onclick=Mmclick('chart1.html') onmouseover=Mmover(2) onmouseout=Mmout(2)>&nbsp;Диаграммы&nbsp</TD>
+   </TR>
+	</TABLE>
+	</DIV>
+
+</div>
+
+
+<SCRIPT>
+	//**** Выделение элементов главного меню при наведении указателя мыши ****//
+	function Mmover(x)
+	{
+		eval("document.all['m'+x].style.backgroundColor='#dddddd'")
+	}
+
+	//**** снятие выделения элементов главного меню при отведении указателя мыши ****//
+	function Mmout(x)
+	{
+		eval("document.all['m'+x].style.backgroundColor='#898989'")
+	}
+
+	//**** если в качестве параметра передается не URL, а код на JavaScript то его следует передавать в формате 'javascript:<код>' ****//
+	function Mmclick(s)
+	{
+		if(s.indexOf('javascript:')==0) eval(s)
+		else if (s != '') window.location.href=s
+
+	}
+
+</SCRIPT>
+</header1>
+<hr><br><br>
+
+
+<body>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+   google.charts.load('current', {'packages':['corechart']});
+   google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data1 = google.visualization.arrayToDataTable([
+     ['Курс', 'Популярность'],
+     ['Мобильные приложения для Android', 6],
+     ['Программирование С++', 8],
+     ['Работа с HTML, CSS',   15],
+     ['Программирование Python', 7],
+     ['Компьютерная графика', 9],
+     ['Основы Web-дизайна',  20],
+     ['Основы Криптографии', 12],
+     ['Программирование Java', 18],
+     ['Основы PHP', 5]
+    ]);
+    var options = {
+     title: 'Популярность курсов',
+     titleTextStyle: { color:'black',
+                      fontSize: 13},
+     is3D: true,
+     slices: {  1: {offset: 0.2},
+                    3: {offset: 0.3},
+                    5: {offset: 0.4},
+                    8: {offset: 0.5},
+          },
+     chartArea:{left:0,top:5,width:'',height:'500px'},
+     legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 13}},
+
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('popularity'));
+     chart.draw(data1, options);
+   }
+   </script>
+   <script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+   google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data2 = google.visualization.arrayToDataTable([
+     ['Возраст', 'Значение %'],
+     ['15-17', 5],
+     ['18-25', 40],
+     ['26-30',   35],
+     ['31-40', 10],
+     ['41-60', 8],
+     ['61 и старше',  2]
+    ]);
+    var options = {
+     title: 'Возраст студентов курсов',
+     is3D: true,
+     slices: {  1: {offset: 0.2},
+                    2: {offset: 0.5}
+          },
+     chartArea:{left:0,top:5,width:'',height:'500px'},
+     legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 13}},
+
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('age'));
+     chart.draw(data2, options);
+   }
+  </script>
+
+ <div id="popularity" style="float:right; width: 40%"></div>
+ <div id="age" style="float:right; width: 40%; margin-top: 5%; margin-left: 60%"></div>
+
+</body>
