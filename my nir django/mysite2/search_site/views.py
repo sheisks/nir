@@ -12,6 +12,8 @@ def index(request):
 
 def html(request):
     return render(request, "search_site/post_list2.html", {});
+def html_page(request):
+    return render(request, "search_site/chart1.html", {});
 
 
 def myform(request):
