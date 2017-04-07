@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 <script src="https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json"></script>{% endcomment %}
-
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 <style>
 #map {float:left; width: 50%; height: 500px; }
@@ -167,14 +167,51 @@ for (var i=0; i < regionData.features.length; i++) {
      if (key in peopleData) {
      // добавляем значение
         regionData.features[i].properties['people'] = peopleData[key].value;
-        console.log(key);
+        //console.log(key);
   }
 }
 
 var geodata = L.geoJSON(regionData, {style: style, onEachFeature: onEachFeature});
 geodata.addTo(map);
 
+function drawPieChart(region_name) {
+  var chdata = new Array(['Оценка', 'Число оценок']);
 
+  for (var key in peopleData) {
+    if (peopleData[key].NAME_1 == region_name) {
+      chdata.push(['Пятерок', peopleData[key].rating5]);
+      chdata.push(['Четверок', peopleData[key].rating4]);
+      chdata.push(['Троек', peopleData[key].rating3]);
+      chdata.push(['Двоек', peopleData[key].rating2]);
+    }
+  }
+
+  console.log(region_name);
+  alert(chdata);
+
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data1 = google.visualization.arrayToDataTable(chdata);
+    var options = {
+      title: 'Популярность курсов',
+      titleTextStyle: { color:'black',
+                      fontSize: 13},
+      is3D: true,
+      slices: {  1: {offset: 0.2},
+                    3: {offset: 0.3},
+                    5: {offset: 0.4},
+                    8: {offset: 0.5},
+          },
+      chartArea:{left:0,top:5,width:'80%',height:'auto' },
+      legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 14}},
+
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('popularity'));
+    console.log("draw!");
+    chart.draw(data1, options);
+  }
+}
 
 function highlightFeature(e) {
     var layer = e.target;
@@ -191,6 +228,7 @@ function highlightFeature(e) {
     }
 
     info.update(layer.feature.properties);
+
 }
 
 function resetHighlight(e) {
@@ -199,7 +237,9 @@ function resetHighlight(e) {
 }
 
 function zoomToFeature(e) {
-    map.fitBounds(e.target.getBounds());
+    //map.fitBounds(e.target.getBounds());
+    var layer = e.target;
+    drawPieChart(layer.feature.properties.NAME_1);
 }
 
 function onEachFeature(feature, layer) {
@@ -254,79 +294,6 @@ legend.addTo(map);
 
 </script>
 
-
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-
-    var chdata = new Array(['Оценка', 'Число оценок']);
-
-         for (var key in peopleData){
-
-
-    {% comment %}if (peopleData[key].NAME_1 == 'Moskva'){% endcomment %}
-      if (regionData = {onEachFeature: highlightFeature}){
-      chdata.push(['Пятерок', peopleData[key].rating5]);
-      chdata.push(['Четверок', peopleData[key].rating4]);
-      chdata.push(['Троек', peopleData[key].rating3]);
-      chdata.push(['Двоек', peopleData[key].rating2]);
-    }
-  }
-
-    alert(chdata);
-
-   google.charts.load('current', {'packages':['corechart']});
-   google.charts.setOnLoadCallback(drawChart);
-   function drawChart() {
-    var data1 = google.visualization.arrayToDataTable(chdata);
-    var options = {
-     title: 'Популярность курсов',
-     titleTextStyle: { color:'black',
-                      fontSize: 13},
-     is3D: true,
-     slices: {  1: {offset: 0.2},
-                    3: {offset: 0.3},
-                    5: {offset: 0.4},
-                    8: {offset: 0.5},
-          },
-     chartArea:{left:0,top:5,width:'80%',height:'auto' },
-     legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 14}},
-
-    };
-    var chart = new google.visualization.PieChart(document.getElementById('popularity'));
-     chart.draw(data1, options);
-   }
-   </script>
-
-
-
-  {% comment %} <script type="text/javascript">
-  google.charts.load('current', {'packages':['corechart']});
-   google.charts.setOnLoadCallback(drawChart);
-   function drawChart() {
-    var data2 = google.visualization.arrayToDataTable([
-     ['Возраст', 'Значение %'],
-     ['15-17', 5],
-     ['18-25', 40],
-     ['26-30',   35],
-     ['31-40', 10],
-     ['41-60', 8],
-     ['61 и старше',  2]
-    ]);
-
-    var options = {
-     title: 'Возраст студентов курсов',
-     is3D: true,
-     slices: {  1: {offset: 0.2},
-                    2: {offset: 0.5}
-          },
-     chartArea:{left:0,top:5,width:'80%',height:'auto'},
-     legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 14}},
-
-    };
-    var chart = new google.visualization.PieChart(document.getElementById('age'));
-     chart.draw(data2, options);
-   }
-  </script>{% endcomment %}
 
  <div id="popularity" style="float:right; width: 40%; height: 400px"></div>
  <div id="age" style="float:right; width: 40%;  margin-left: 50%; margin-top: -10%; height: 400px">{{ form }} </div>
