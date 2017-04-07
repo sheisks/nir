@@ -10,9 +10,15 @@
 <script src="{% static 'search_site/loadJSON.js' %}"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
+{% comment %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<script src="https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json"></script>{% endcomment %}
+
 
 <style>
 #map {float:left; width: 50%; height: 500px; }
+{##map {float:left; width: 960px; height: 500px; }#}
 
 .info {
     padding: 6px 8px;
@@ -43,13 +49,16 @@ body{background-color:white ; width:100%}
  #header1 {width:100%;
           height:50px;
          display: block;
-	background-color: #000033;}
+          background-color: #000033;
+ }
+
 </style>
 </HEAD>
 
 
 <header>
- <p style = "margin-top:10px; text-align: center"><img  src= "{% static "search_site/fon_zag3.png" %}"></p>
+{#<H3 style="font: bold 25pt Georgia verdana italic;text-align:center; color:#14126e;margin-top:20px"> Информация об online-курсах </H3>#}
+    <p style = "margin-top:10px; text-align: center"><img  src= "{% static "search_site/fon_zag3.png" %}"></p>
 </header>
 
 <header1>
@@ -90,8 +99,8 @@ body{background-color:white ; width:100%}
 
 </SCRIPT>
 </header1>
-<hr><br> 
- 
+<hr><br>
+
 
 <BODY >
 
@@ -245,11 +254,100 @@ legend.addTo(map);
 
 </script>
 
- <div id="popularity" style="float:right; width: 40%"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+    var chdata = new Array(['Оценка', 'Число оценок']);
+
+         for (var key in peopleData){
+
+
+    {% comment %}if (peopleData[key].NAME_1 == 'Moskva'){% endcomment %}
+      if (regionData = {onEachFeature: highlightFeature}){
+      chdata.push(['Пятерок', peopleData[key].rating5]);
+      chdata.push(['Четверок', peopleData[key].rating4]);
+      chdata.push(['Троек', peopleData[key].rating3]);
+      chdata.push(['Двоек', peopleData[key].rating2]);
+    }
+  }
+
+    alert(chdata);
+
+   google.charts.load('current', {'packages':['corechart']});
+   google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data1 = google.visualization.arrayToDataTable(chdata);
+    var options = {
+     title: 'Популярность курсов',
+     titleTextStyle: { color:'black',
+                      fontSize: 13},
+     is3D: true,
+     slices: {  1: {offset: 0.2},
+                    3: {offset: 0.3},
+                    5: {offset: 0.4},
+                    8: {offset: 0.5},
+          },
+     chartArea:{left:0,top:5,width:'80%',height:'auto' },
+     legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 14}},
+
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('popularity'));
+     chart.draw(data1, options);
+   }
+   </script>
+
+
+
+  {% comment %} <script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+   google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data2 = google.visualization.arrayToDataTable([
+     ['Возраст', 'Значение %'],
+     ['15-17', 5],
+     ['18-25', 40],
+     ['26-30',   35],
+     ['31-40', 10],
+     ['41-60', 8],
+     ['61 и старше',  2]
+    ]);
+
+    var options = {
+     title: 'Возраст студентов курсов',
+     is3D: true,
+     slices: {  1: {offset: 0.2},
+                    2: {offset: 0.5}
+          },
+     chartArea:{left:0,top:5,width:'80%',height:'auto'},
+     legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 14}},
+
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('age'));
+     chart.draw(data2, options);
+   }
+  </script>{% endcomment %}
+
+ <div id="popularity" style="float:right; width: 40%; height: 400px"></div>
+ <div id="age" style="float:right; width: 40%;  margin-left: 50%; margin-top: -10%; height: 400px">{{ form }} </div>
+
+
+
+ {% comment %}<div id="popularity" style="float:right; width: 40%; font-size: 16pt; font-family: Lucinda Grande, Lucinda Sans Unicode, Helvetica, Arial, Verdana, sans-serif; padding-right: 4%; text-align: inherit">
+    <ul>
+  <li>Интерактивная карта отображает информацию по общему количеству студентов компьютерных online-курсов по всем регионам России.</li>
+     <br>
+  <li>Для получения информации по какому-либо региону, наведите на него указатель мыши. В правом верхнем углу карты появится подробная информация.</li>
+      <br>
+  <li>Легенда в правой нижней части карты в общем виде отображает данные для различия варьируемости количества студентов посредством выделения зон разными цветами.</li>
+      <br>
+  <li>Для перемещения по карте зажмите левую кнопку мыши и начните двигать указатель в нужном направлении. При необходимости отрегулируйте масштаб.</li>
+        </ul>
+
+ </div>{% endcomment %}
  <div id="age" style="float:right; width: 40%; margin-top: 5%; margin-left: 60%"></div>
 
 
 
 </BODY>
 </HTML>
-
