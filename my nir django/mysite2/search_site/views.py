@@ -23,3 +23,15 @@ def myform(request):
 		form = PostForm(request.POST)
 	
 	return HttpResponse("---");
+
+# def useappl(request, useappl_id):
+#     if request.method == 'POST':
+#         form = ApplicationForm(request.POST)
+#         if form.is_valid():
+#             # Обработка
+#             form.save() # сохранение  модели
+#             return HttpResponseRedirect('/thanks/')
+#     else:
+#         form = ApplicationForm()
+#
+#     return render(request, 'post_list2.html', {'form': form});
