@@ -18,3 +18,5 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    # city = models.ForeignKey('peopleData.NAME_1', blank=True, null=True)
