@@ -9,12 +9,12 @@
 <script src="{% static 'leaflet/leaflet.js' %}"></script>
 <script src="{% static 'search_site/loadJSON.js' %}"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 {% comment %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 <script src="https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json"></script>{% endcomment %}
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 
 <style>
 #map {float:left; width: 50%; height: 500px; }
@@ -47,7 +47,7 @@
 body{background-color:white ; width:100%}
 
  #header1 {width:100%;
-          height:50px;
+          height:20px;
          display: block;
           background-color: #000033;
  }
@@ -65,12 +65,12 @@ body{background-color:white ; width:100%}
 <div id="header1">
 
 <DiV id="menu" STYLE="position:static;width:40%; margin-top:-20px;align: center; text-align:center;margin-left:40%">
-	<TABLE style="BORDER:0; border-spacing:10px; WIDTH:60%; HIGHT:30px" >
+	{% comment %}<TABLE style="BORDER:0; border-spacing:10px; WIDTH:60%; HIGHT:30px" >
 	<TR>
 	<TD style="font-size:20px; border-radius: 10px; border-collapse:separate; background-color: #f4f4f4; border-bottom:" class=mainMenu id="m1" onclick=Mmclick('post_list2.html') onmouseover=Mmover(1) onmouseout=Mmout(1)>&nbsp;Карта&nbsp</TD>
         <TD style="font-size:20px;border-radius: 10px; border-collapse:separate; background-color: #f4f4f4; border-bottom:" class=mainMenu id="m2" onclick=Mmclick('chart1.html') onmouseover=Mmover(2) onmouseout=Mmout(2)>&nbsp;Диаграммы&nbsp</TD>
    </TR>
-	</TABLE>
+	</TABLE>{% endcomment %}
 	</DIV>
 
 </div>
@@ -167,51 +167,93 @@ for (var i=0; i < regionData.features.length; i++) {
      if (key in peopleData) {
      // добавляем значение
         regionData.features[i].properties['people'] = peopleData[key].value;
-        //console.log(key);
+       // console.log(key);
   }
 }
 
 var geodata = L.geoJSON(regionData, {style: style, onEachFeature: onEachFeature});
 geodata.addTo(map);
 
+
 function drawPieChart(region_name) {
-  var chdata = new Array(['Оценка', 'Число оценок']);
+   var chdata = new Array(['Оценка', 'Число оценок']);
 
-  for (var key in peopleData) {
-    if (peopleData[key].NAME_1 == region_name) {
-      chdata.push(['Пятерок', peopleData[key].rating5]);
-      chdata.push(['Четверок', peopleData[key].rating4]);
-      chdata.push(['Троек', peopleData[key].rating3]);
-      chdata.push(['Двоек', peopleData[key].rating2]);
-    }
+   for (var key in peopleData) {
+     if (peopleData[key].NAME_1 == region_name) {
+       chdata.push(['Пятерок', peopleData[key].rating5]);
+       chdata.push(['Четверок', peopleData[key].rating4]);
+       chdata.push(['Троек', peopleData[key].rating3]);
+       chdata.push(['Двоек', peopleData[key].rating2]);
+     }
+   }
+
+   console.log(region_name);
+   //alert(chdata);
+
+   google.charts.load('current', {'packages':['corechart']});
+   google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+     var data1 = google.visualization.arrayToDataTable(chdata);
+     var options = {
+       title: 'Распределение оценок по региону',
+       titleTextStyle: { color:'black', fontSize: 14},
+       is3D: true,
+       slices: {  1: {offset: 0.4},
+                     3: {offset: 0.3},
+                     2: {offset: 0.2},
+
+           },
+{#       chartArea:{left:'-5%',top:10,width:'80%',height:'auto' },#}
+       legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 14}},
+
+     };
+     var chart = new google.visualization.PieChart(document.getElementById('popularity'));
+     console.log("draw!");
+     chart.draw(data1, options);
+   }
+ }
+
+  function drawPieChart2(region_name2) {
+      var chdata2 = new Array(['Возраст', 'Число студентов']);
+
+      for (var key in peopleData) {
+          if (peopleData[key].NAME_1 == region_name2) {
+              chdata2.push(['15-17', peopleData[key].age15_17]);
+              chdata2.push(['18-25', peopleData[key].age18_25]);
+              chdata2.push(['26-30', peopleData[key].age26_30]);
+              chdata2.push(['31-40', peopleData[key].age31_40]);
+              chdata2.push(['41-60', peopleData[key].age41_60]);
+              chdata2.push(['61 и старше', peopleData[key].age61]);
+          }
+      }
+
+      console.log(region_name2);
+      //alert(chdata);
+      google.charts.load('current', {'packages': ['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+          var data2 = google.visualization.arrayToDataTable(chdata2);
+
+          var options = {
+              title: 'Возраст студентов по региону',
+              titleTextStyle: {color: 'black', fontSize: 14},
+              is3D: true,
+              slices: {
+                  1: {offset: 0.6},
+                  2: {offset: 0.3},
+                  5: {offset: 0.4},
+                  6: {offset: 0.5},
+              },
+{#              chartArea: {left: 0, top: 5, width: '80%', height: 'auto'},#}
+              legend: {position: 'left', maxLines: 11, textStyle: {color: 'black', fontSize: 14}},
+
+          };
+          var chart = new google.visualization.PieChart(document.getElementById('age'));
+          console.log("draw!");
+          chart.draw(data2, options);
+      }
   }
 
-  console.log(region_name);
-  alert(chdata);
-
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
-  function drawChart() {
-    var data1 = google.visualization.arrayToDataTable(chdata);
-    var options = {
-      title: 'Популярность курсов',
-      titleTextStyle: { color:'black',
-                      fontSize: 13},
-      is3D: true,
-      slices: {  1: {offset: 0.2},
-                    3: {offset: 0.3},
-                    5: {offset: 0.4},
-                    8: {offset: 0.5},
-          },
-      chartArea:{left:0,top:5,width:'80%',height:'auto' },
-      legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 14}},
-
-    };
-    var chart = new google.visualization.PieChart(document.getElementById('popularity'));
-    console.log("draw!");
-    chart.draw(data1, options);
-  }
-}
 
 function highlightFeature(e) {
     var layer = e.target;
@@ -228,7 +270,6 @@ function highlightFeature(e) {
     }
 
     info.update(layer.feature.properties);
-
 }
 
 function resetHighlight(e) {
@@ -237,9 +278,10 @@ function resetHighlight(e) {
 }
 
 function zoomToFeature(e) {
-    //map.fitBounds(e.target.getBounds());
+   // map.fitBounds(e.target.getBounds());
     var layer = e.target;
     drawPieChart(layer.feature.properties.NAME_1);
+    drawPieChart2(layer.feature.properties.NAME_1);
 }
 
 function onEachFeature(feature, layer) {
@@ -295,24 +337,10 @@ legend.addTo(map);
 </script>
 
 
- <div id="popularity" style="float:right; width: 40%; height: 400px"></div>
- <div id="age" style="float:right; width: 40%;  margin-left: 50%; margin-top: -10%; height: 400px">{{ form }} </div>
+ <div id="popularity" style="float:right; width: 40%;top:-10%; height: 300px; text-align: right"><h3>Здесь будет отображаться распределение оценок по региону</h3></div>
+ <div id="age" style="float:right; width: 40%;margin-left: 50%; margin-top: -15%; height: 320px; text-align: right"><h3>Здесь будет отображаться возраст студентов по региону</h3> </div>
 
 
-
- {% comment %}<div id="popularity" style="float:right; width: 40%; font-size: 16pt; font-family: Lucinda Grande, Lucinda Sans Unicode, Helvetica, Arial, Verdana, sans-serif; padding-right: 4%; text-align: inherit">
-    <ul>
-  <li>Интерактивная карта отображает информацию по общему количеству студентов компьютерных online-курсов по всем регионам России.</li>
-     <br>
-  <li>Для получения информации по какому-либо региону, наведите на него указатель мыши. В правом верхнем углу карты появится подробная информация.</li>
-      <br>
-  <li>Легенда в правой нижней части карты в общем виде отображает данные для различия варьируемости количества студентов посредством выделения зон разными цветами.</li>
-      <br>
-  <li>Для перемещения по карте зажмите левую кнопку мыши и начните двигать указатель в нужном направлении. При необходимости отрегулируйте масштаб.</li>
-        </ul>
-
- </div>{% endcomment %}
- <div id="age" style="float:right; width: 40%; margin-top: 5%; margin-left: 60%"></div>
 
 
 
