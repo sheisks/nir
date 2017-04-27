@@ -1,0 +1,1094 @@
+CREATE (CCourses:Courses {title:'All courses', tagline:'All areas of online courses.'})
+CREATE (UUsers:Users {title:'All users', tagline:'All users registered on courses.'})
+CREATE (RRegions:Regions {title:'All regions', tagline:'All russian regions in which courses are available.'})
+
+
+CREATE (Course1:Course {name:'Work with html, css'})
+CREATE (Course2:Course {name:'Programming Java'})
+CREATE (Course3:Course {name:'Programming Python'})
+CREATE (Course4:Course {name:'Programming c++'})
+CREATE (Course5:Course {name:'Basics of cryptography'})
+CREATE (Course6:Course {name:'Mobile applications for Android'})
+CREATE (Course7:Course {name:'Computer graphics'})
+CREATE (Course8:Course {name:'PHP Basics.'})
+CREATE (Course9:Course {name:'The basics of web design'})
+CREATE (Course10:Course {name:'Introduction to Neural Networks'})
+
+CREATE (Anonim1:User    {name:'Anonim1',NAME_1:'Belgorod',age:'15'})
+CREATE (Anonim2:User    {name:'Anonim2',NAME_1:'Belgorod',age:'22'})
+CREATE (Anonim3:User    {name:'Anonim3',NAME_1:'Belgorod',age:'34'})
+CREATE (Anonim4:User    {name:'Anonim4',NAME_1:'Belgorod',age:'66'})
+CREATE (Anonim5:User    {name:'Anonim5',NAME_1:'Belgorod',age:'18'})
+CREATE (Anonim6:User    {name:'Anonim6',NAME_1:'Belgorod',age:'25'})
+CREATE (Anonim7:User    {name:'Anonim7',NAME_1:'Belgorod',age:'61'})
+CREATE (Anonim8:User    {name:'Anonim8',NAME_1:'Belgorod',age:'70'})
+CREATE (Anonim9:User    {name:'Anonim9',NAME_1:'Belgorod',age:'21'})
+CREATE (Anonim10:User   {name:'Anonim10',NAME_1:'Belgorod',age:'22'})
+CREATE (Anonim11:User   {name:'Anonim11',NAME_1:'Belgorod',age:'23'})
+CREATE (Anonim12:User   {name:'Anonim12',NAME_1:'Belgorod',age:'24'})
+CREATE (Anonim13:User   {name:'Anonim13',NAME_1:'Belgorod',age:'26'})
+CREATE (Anonim14:User   {name:'Anonim14',NAME_1:'Belgorod',age:'31'})
+CREATE (Anonim15:User   {name:'Anonim15',NAME_1:'Belgorod',age:'34'})
+CREATE (Anonim16:User   {name:'Anonim16',NAME_1:'Belgorod',age:'38'})
+CREATE (Anonim17:User   {name:'Anonim17',NAME_1:'Belgorod',age:'35'})
+CREATE (Anonim18:User   {name:'Anonim18',NAME_1:'Belgorod',age:'45'})
+CREATE (Anonim19:User   {name:'Anonim19',NAME_1:'Belgorod',age:'43'})
+CREATE (Anonim20:User   {name:'Anonim20',NAME_1:'Belgorod',age:'30'})
+CREATE (Anonim21:User   {name:'Anonim21',NAME_1:'Belgorod',age:'22'})
+CREATE (Anonim22:User   {name:'Anonim22',NAME_1:'Belgorod',age:'20'})
+CREATE (Anonim23:User   {name:'Anonim23',NAME_1:'Belgorod',age:'24'})
+CREATE (Anonim24:User   {name:'Anonim24',NAME_1: 'Crimea',age:'15'})
+CREATE (Anonim25:User   {name:'Anonim25',NAME_1: 'Crimea',age:'21'})
+CREATE (Anonim26:User   {name:'Anonim26',NAME_1: 'Crimea',age:'34'})
+CREATE (Anonim27:User   {name:'Anonim27',NAME_1: 'Crimea',age:'50'})
+CREATE (Anonim28:User   {name:'Anonim28',NAME_1: 'Crimea',age:'66'})
+CREATE (Anonim29:User   {name:'Anonim29',NAME_1: 'Crimea',age:'23'})
+CREATE (Anonim30:User   {name:'Anonim30',NAME_1: 'Amur',age:'18'})
+CREATE (Anonim31:User   {name:'Anonim31',NAME_1: 'Amur',age:'34'})
+CREATE (Anonim32:User   {name:'Anonim32',NAME_1: 'Amur',age:'54'})
+CREATE (Anonim33:User   {name:'Anonim33',NAME_1: 'Amur',age:'23'})
+CREATE (Anonim34:User   {name:'Anonim34',NAME_1: 'Amur',age:'22'})
+CREATE (Anonim35:User   {name:'Anonim35',NAME_1: 'Amur',age:'62'})
+CREATE (Anonim36:User   {name:'Anonim36',NAME_1: 'Amur',age:'16'})
+CREATE (Anonim37:User   {name:'Anonim37',NAME_1: 'Amur',age:'19'})
+CREATE (Anonim38:User   {name:'Anonim38',NAME_1: 'Amur',age:'20'})
+CREATE (Anonim39:User   {name:'Anonim39',NAME_1: 'Amur',age:'21'})
+CREATE (Anonim40:User   {name:'Anonim40',NAME_1: 'Amur',age:'34'})
+CREATE (Anonim41:User   {name:'Anonim41',NAME_1: 'Amur',age:'31'})
+CREATE (Anonim42:User   {name:'Anonim42',NAME_1: 'Amur',age:'37'})
+CREATE (Anonim43:User   {name:'Anonim43',NAME_1: 'Amur',age:'38'})
+CREATE (Anonim44:User   {name:'Anonim44',NAME_1: 'Amur',age:'45'})
+CREATE (Anonim45:User   {name:'Anonim45',NAME_1: 'Amur',age:'52'})
+CREATE (Anonim46:User   {name:'Anonim46',NAME_1: 'Amur',age:'71'})
+CREATE (Anonim47:User   {name:'Anonim47',NAME_1: 'Arkhangel'''sk',age:'17'})
+CREATE (Anonim48:User   {name:'Anonim48',NAME_1: 'Arkhangel'''sk',age:'23'})
+CREATE (Anonim49:User   {name:'Anonim49',NAME_1: 'Arkhangel'''sk',age:'42'})
+CREATE (Anonim50:User   {name:'Anonim50',NAME_1: 'Arkhangel'''sk',age:'31'})
+CREATE (Anonim51:User   {name:'Anonim51',NAME_1: 'Arkhangel'''sk',age:'26'})
+CREATE (Anonim52:User   {name:'Anonim52',NAME_1: 'Arkhangel'''sk',age:'42'})
+CREATE (Anonim53:User   {name:'Anonim53',NAME_1: 'Arkhangel'''sk',age:'28'})
+CREATE (Anonim54:User   {name:'Anonim54',NAME_1: 'Arkhangel'''sk',age:'21'})
+CREATE (Anonim55:User   {name:'Anonim55',NAME_1: 'Arkhangel'''sk',age:'37'})
+CREATE (Anonim56:User   {name:'Anonim56',NAME_1: 'Arkhangel'''sk',age:'39'})
+CREATE (Anonim57:User   {name:'Anonim57',NAME_1: 'Arkhangel'''sk',age:'40'})
+CREATE (Anonim58:User   {name:'Anonim58',NAME_1: 'Chechnya',age:'22'})
+CREATE (Anonim59:User   {name:'Anonim59',NAME_1: 'Chechnya',age:'33'})
+CREATE (Anonim60:User   {name:'Anonim60',NAME_1: 'Chechnya',age:'44'})
+CREATE (Anonim61:User   {name:'Anonim61',NAME_1: 'Chechnya',age:'55'})
+CREATE (Anonim62:User   {name:'Anonim62',NAME_1: 'Chechnya',age:'66'})
+CREATE (Anonim63:User   {name:'Anonim63',NAME_1: 'Chukot',age:'23'})
+CREATE (Anonim64:User   {name:'Anonim64',NAME_1: 'Chukot',age:'34'})
+CREATE (Anonim65:User   {name:'Anonim65',NAME_1: 'Chukot',age:'45'})
+CREATE (Anonim66:User   {name:'Anonim66',NAME_1: 'Chukot',age:'56'})
+CREATE (Anonim67:User   {name:'Anonim67',NAME_1: 'Chukot',age:'67'})
+CREATE (Anonim68:User   {name:'Anonim68',NAME_1: 'Chukot',age:'78'})
+CREATE (Anonim69:User   {name:'Anonim69',NAME_1: 'Chukot',age:'89'})
+CREATE (Anonim70:User   {name:'Anonim70',NAME_1: 'Ivanovo',age:'18'})
+CREATE (Anonim71:User   {name:'Anonim71',NAME_1: 'Ivanovo',age:'22'})
+CREATE (Anonim72:User   {name:'Anonim72',NAME_1: 'Ivanovo',age:'24'})
+CREATE (Anonim73:User   {name:'Anonim73',NAME_1: 'Ivanovo',age:'27'})
+CREATE (Anonim74:User   {name:'Anonim74',NAME_1: 'Ivanovo',age:'28'})
+CREATE (Anonim75:User   {name:'Anonim75',NAME_1: 'Ivanovo',age:'28'})
+CREATE (Anonim76:User   {name:'Anonim76',NAME_1: 'Ivanovo',age:'28'})
+CREATE (Anonim77:User   {name:'Anonim77',NAME_1: 'Ivanovo',age:'31'})
+CREATE (Anonim78:User   {name:'Anonim78',NAME_1: 'Ivanovo',age:'41'})
+CREATE (Anonim79:User   {name:'Anonim79',NAME_1: 'Ivanovo',age:'41'})
+CREATE (Anonim80:User   {name:'Anonim80',NAME_1: 'Ivanovo',age:'33'})
+CREATE (Anonim81:User   {name:'Anonim81',NAME_1: 'Ivanovo',age:'35'})
+CREATE (Anonim82:User   {name:'Anonim82',NAME_1: 'Ivanovo',age:'37'})
+CREATE (Anonim83:User   {name:'Anonim83',NAME_1: 'Ivanovo',age:'22'})
+CREATE (Anonim84:User   {name:'Anonim84',NAME_1: 'Ivanovo',age:'21'})
+CREATE (Anonim85:User   {name:'Anonim85',NAME_1: 'Ivanovo',age:'46'})
+CREATE (Anonim86:User   {name:'Anonim86',NAME_1: 'Ivanovo',age:'40'})
+CREATE (Anonim87:User   {name:'Anonim87',NAME_1: 'Ivanovo',age:'31'})
+CREATE (Anonim88:User   {name:'Anonim88',NAME_1: 'Ivanovo',age:'21'})
+CREATE (Anonim89:User   {name:'Anonim89',NAME_1: 'Ivanovo',age:'24'})
+CREATE (Anonim90:User   {name:'Anonim90',NAME_1: 'Ivanovo',age:'28'})
+CREATE (Anonim91:User   {name:'Anonim91',NAME_1: 'Ivanovo',age:'30'})
+CREATE (Anonim92:User   {name:'Anonim92',NAME_1: 'Ivanovo',age:'34'})
+CREATE (Anonim93:User   {name:'Anonim93',NAME_1: 'Karachay-Cherkess',age:'15'})
+CREATE (Anonim94:User   {name:'Anonim94',NAME_1: 'Karachay-Cherkess',age:'22'})
+CREATE (Anonim95:User   {name:'Anonim95',NAME_1: 'Karachay-Cherkess',age:'43'})
+CREATE (Anonim96:User   {name:'Anonim96',NAME_1: 'Karachay-Cherkess',age:'32'})
+CREATE (Anonim97:User   {name:'Anonim97',NAME_1: 'Karachay-Cherkess',age:'15'})
+CREATE (Anonim98:User   {name:'Anonim98',NAME_1: 'Karachay-Cherkess',age:'26'})
+CREATE (Anonim99:User   {name:'Anonim99',NAME_1: 'Karachay-Cherkess',age:'18'})
+CREATE (Anonim100:User  {name:'Anonim100',NAME_1: 'Karachay-Cherkess',age:'19'})
+CREATE (Anonim101:User  {name:'Anonim101',NAME_1: 'Karelia',age:'17'})
+CREATE (Anonim102:User  {name:'Anonim102',NAME_1: 'Karelia',age:'21'})
+CREATE (Anonim103:User  {name:'Anonim103',NAME_1: 'Karelia',age:'22'})
+CREATE (Anonim104:User  {name:'Anonim104',NAME_1: 'Karelia',age:'32'})
+CREATE (Anonim105:User  {name:'Anonim105',NAME_1: 'Karelia',age:'33'})
+CREATE (Anonim106:User  {name:'Anonim106',NAME_1: 'Karelia',age:'35'})
+CREATE (Anonim107:User  {name:'Anonim107',NAME_1: 'Karelia',age:'30'})
+CREATE (Anonim108:User  {name:'Anonim108',NAME_1: 'Karelia',age:'27'})
+CREATE (Anonim109:User  {name:'Anonim109',NAME_1: 'Karelia',age:'40'})
+CREATE (Anonim110:User  {name:'Anonim110',NAME_1: 'Karelia',age:'41'})
+CREATE (Anonim111:User  {name:'Anonim111',NAME_1: 'Karelia',age:'27'})
+CREATE (Anonim112:User  {name:'Anonim112',NAME_1: 'Karelia',age:'26'})
+CREATE (Anonim113:User  {name:'Anonim113',NAME_1: 'Karelia',age:'26'})
+CREATE (Anonim114:User  {name:'Anonim114',NAME_1: 'Kemerovo',age:'15'})
+CREATE (Anonim115:User  {name:'Anonim115',NAME_1: 'Kemerovo',age:'21'})
+CREATE (Anonim116:User  {name:'Anonim116',NAME_1: 'Kemerovo',age:'34'})
+CREATE (Anonim117:User  {name:'Anonim117',NAME_1: 'Kemerovo',age:'22'})
+CREATE (Anonim118:User  {name:'Anonim118',NAME_1: 'Kemerovo',age:'24'})
+CREATE (Anonim119:User  {name:'Anonim119',NAME_1: 'Kemerovo',age:'22'})
+CREATE (Anonim120:User  {name:'Anonim120',NAME_1: 'Kemerovo',age:'25'})
+CREATE (Anonim121:User  {name:'Anonim121',NAME_1: 'Kemerovo',age:'25'})
+CREATE (Anonim122:User  {name:'Anonim122',NAME_1: 'Kemerovo',age:'18'})
+CREATE (Anonim123:User  {name:'Anonim123',NAME_1: 'Kemerovo',age:'18'})
+CREATE (Anonim124:User  {name:'Anonim124',NAME_1: 'Khabarovsk',age:'15'})
+CREATE (Anonim125:User  {name:'Anonim125',NAME_1: 'Khabarovsk',age:'18'})
+CREATE (Anonim126:User  {name:'Anonim126',NAME_1: 'Khabarovsk',age:'18'})
+CREATE (Anonim127:User  {name:'Anonim127',NAME_1: 'Khabarovsk',age:'18'})
+CREATE (Anonim128:User  {name:'Anonim128',NAME_1: 'Khabarovsk',age:'18'})
+CREATE (Anonim129:User  {name:'Anonim129',NAME_1: 'Khabarovsk',age:'18'})
+CREATE (Anonim130:User  {name:'Anonim130',NAME_1: 'Khabarovsk',age:'23'})
+CREATE (Anonim131:User  {name:'Anonim131',NAME_1: 'Khabarovsk',age:'23'})
+CREATE (Anonim132:User  {name:'Anonim132',NAME_1: 'Khabarovsk',age:'23'})
+CREATE (Anonim133:User  {name:'Anonim133',NAME_1: 'Khabarovsk',age:'25'})
+CREATE (Anonim134:User  {name:'Anonim134',NAME_1: 'Khabarovsk',age:'25'})
+CREATE (Anonim135:User  {name:'Anonim135',NAME_1: 'Khabarovsk',age:'28'})
+CREATE (Anonim136:User  {name:'Anonim136',NAME_1: 'Khabarovsk',age:'28'})
+CREATE (Anonim137:User  {name:'Anonim137',NAME_1: 'Khabarovsk',age:'28'})
+CREATE (Anonim138:User  {name:'Anonim138',NAME_1: 'Khabarovsk',age:'38'})
+CREATE (Anonim139:User  {name:'Anonim139',NAME_1: 'Khabarovsk',age:'33'})
+CREATE (Anonim130:User  {name:'Anonim130',NAME_1: 'Khabarovsk',age:'31'})
+CREATE (Anonim141:User  {name:'Anonim141',NAME_1: 'Khabarovsk',age:'30'})
+CREATE (Anonim142:User  {name:'Anonim142',NAME_1: 'Khabarovsk',age:'43'})
+CREATE (Anonim143:User  {name:'Anonim143',NAME_1: 'Khabarovsk',age:'53'})
+CREATE (Anonim144:User  {name:'Anonim144',NAME_1: 'Khabarovsk',age:'35'})
+CREATE (Anonim145:User  {name:'Anonim145',NAME_1: 'Khabarovsk',age:'38'})
+CREATE (Anonim146:User  {name:'Anonim146',NAME_1: 'Khabarovsk',age:'50'})
+CREATE (Anonim147:User  {name:'Anonim147',NAME_1: 'Khanty-Mansiy',age:'16'})
+CREATE (Anonim148:User  {name:'Anonim148',NAME_1: 'Khanty-Mansiy',age:'23'})
+CREATE (Anonim149:User  {name:'Anonim149',NAME_1: 'Khanty-Mansiy',age:'25'})
+CREATE (Anonim150:User  {name:'Anonim150',NAME_1: 'Khanty-Mansiy',age:'21'})
+CREATE (Anonim151:User  {name:'Anonim151',NAME_1: 'Khanty-Mansiy',age:'28'})
+CREATE (Anonim152:User  {name:'Anonim152',NAME_1: 'Khanty-Mansiy',age:'33'})
+CREATE (Anonim153:User  {name:'Anonim153',NAME_1: 'Khanty-Mansiy',age:'28'})
+CREATE (Anonim154:User  {name:'Anonim154',NAME_1: 'Khanty-Mansiy',age:'28'})
+CREATE (Anonim155:User  {name:'Anonim155',NAME_1: 'Khanty-Mansiy',age:'22'})
+CREATE (Anonim156:User  {name:'Anonim156',NAME_1: 'Khanty-Mansiy',age:'21'})
+CREATE (Anonim157:User  {name:'Anonim157',NAME_1: 'Khanty-Mansiy',age:'20'})
+CREATE (Anonim158:User  {name:'Anonim158',NAME_1: 'Komi',age:'21'})
+CREATE (Anonim159:User  {name:'Anonim159',NAME_1: 'Komi',age:'23'})
+CREATE (Anonim160:User  {name:'Anonim160',NAME_1: 'Komi',age:'24'})
+CREATE (Anonim161:User  {name:'Anonim161',NAME_1: 'Komi',age:'26'})
+CREATE (Anonim162:User  {name:'Anonim162',NAME_1: 'Komi',age:'26'})
+CREATE (Anonim163:User  {name:'Anonim163',NAME_1: 'Komi',age:'28'})
+CREATE (Anonim164:User  {name:'Anonim164',NAME_1: 'Komi',age:'31'})
+CREATE (Anonim165:User  {name:'Anonim165',NAME_1: 'Komi',age:'35'})
+CREATE (Anonim166:User  {name:'Anonim166',NAME_1: 'Komi',age:'36'})
+CREATE (Anonim167:User  {name:'Anonim167',NAME_1: 'Komi',age:'40'})
+CREATE (Anonim168:User  {name:'Anonim168',NAME_1: 'Komi',age:'40'})
+CREATE (Anonim169:User  {name:'Anonim169',NAME_1: 'Komi',age:'47'})
+CREATE (Anonim170:User  {name:'Anonim170',NAME_1: 'Krasnoyars',age:'19'})
+CREATE (Anonim171:User  {name:'Anonim171',NAME_1: 'Krasnoyars',age:'19'})
+CREATE (Anonim172:User  {name:'Anonim172',NAME_1: 'Krasnoyars',age:'19'})
+CREATE (Anonim173:User  {name:'Anonim173',NAME_1: 'Krasnoyars',age:'19'})
+CREATE (Anonim174:User  {name:'Anonim174',NAME_1: 'Krasnoyars',age:'25'})
+CREATE (Anonim175:User  {name:'Anonim175',NAME_1: 'Krasnoyars',age:'25'})
+CREATE (Anonim176:User  {name:'Anonim176',NAME_1: 'Krasnoyars',age:'25'})
+CREATE (Anonim177:User  {name:'Anonim177',NAME_1: 'Krasnoyars',age:'21'})
+CREATE (Anonim178:User  {name:'Anonim178',NAME_1: 'Krasnoyars',age:'21'})
+CREATE (Anonim179:User  {name:'Anonim179',NAME_1: 'Krasnoyars',age:'28'})
+CREATE (Anonim180:User  {name:'Anonim180',NAME_1: 'Krasnoyars',age:'28'})
+CREATE (Anonim181:User  {name:'Anonim181',NAME_1: 'Krasnoyars',age:'28'})
+CREATE (Anonim182:User  {name:'Anonim182',NAME_1: 'Krasnoyars',age:'28'})
+CREATE (Anonim183:User  {name:'Anonim183',NAME_1: 'Krasnoyars',age:'26'})
+CREATE (Anonim184:User  {name:'Anonim184',NAME_1: 'Krasnoyars',age:'26'})
+CREATE (Anonim185:User  {name:'Anonim185',NAME_1: 'Krasnoyars',age:'33'})
+CREATE (Anonim186:User  {name:'Anonim186',NAME_1: 'Krasnoyars',age:'34'})
+CREATE (Anonim187:User  {name:'Anonim187',NAME_1: 'Krasnoyars',age:'35'})
+CREATE (Anonim188:User  {name:'Anonim188',NAME_1: 'Krasnoyars',age:'76'})
+CREATE (Anonim189:User  {name:'Anonim189',NAME_1: 'Krasnoyars',age:'50'})
+CREATE (Anonim190:User  {name:'Anonim190',NAME_1: 'Krasnoyars',age:'61'})
+CREATE (Anonim191:User  {name:'Anonim191',NAME_1: 'Krasnoyars',age:'44'})
+CREATE (Anonim192:User  {name:'Anonim192',NAME_1: 'Krasnoyars',age:'57'})
+CREATE (Anonim193:User  {name:'Anonim193',NAME_1: 'Leningrad',age:'18'})
+CREATE (Anonim194:User  {name:'Anonim194',NAME_1: 'Leningrad',age:'18'})
+CREATE (Anonim195:User  {name:'Anonim195',NAME_1: 'Leningrad',age:'18'})
+CREATE (Anonim196:User  {name:'Anonim196',NAME_1: 'Leningrad',age:'18'})
+CREATE (Anonim197:User  {name:'Anonim197',NAME_1: 'Leningrad',age:'18'})
+CREATE (Anonim198:User  {name:'Anonim198',NAME_1: 'Leningrad',age:'18'})
+CREATE (Anonim199:User  {name:'Anonim199',NAME_1: 'Leningrad',age:'18'})
+CREATE (Anonim200:User  {name:'Anonim200',NAME_1: 'Leningrad',age:'18'})
+CREATE (Anonim201:User  {name:'Anonim201',NAME_1: 'Leningrad',age:'18'})
+CREATE (Anonim202:User  {name:'Anonim202',NAME_1: 'Leningrad',age:'21'})
+CREATE (Anonim203:User  {name:'Anonim203',NAME_1: 'Leningrad',age:'23'})
+CREATE (Anonim204:User  {name:'Anonim204',NAME_1: 'Leningrad',age:'23'})
+CREATE (Anonim205:User  {name:'Anonim205',NAME_1: 'Leningrad',age:'23'})
+CREATE (Anonim206:User  {name:'Anonim206',NAME_1: 'Leningrad',age:'32'})
+CREATE (Anonim207:User  {name:'Anonim207',NAME_1: 'Leningrad',age:'26'})
+CREATE (Anonim208:User  {name:'Anonim208',NAME_1: 'Leningrad',age:'26'})
+CREATE (Anonim209:User  {name:'Anonim209',NAME_1: 'Leningrad',age:'26'})
+CREATE (Anonim210:User  {name:'Anonim210',NAME_1: 'Leningrad',age:'27'})
+CREATE (Anonim211:User  {name:'Anonim211',NAME_1: 'Leningrad',age:'27'})
+CREATE (Anonim212:User  {name:'Anonim212',NAME_1: 'Leningrad',age:'27'})
+CREATE (Anonim213:User  {name:'Anonim213',NAME_1: 'Leningrad',age:'29'})
+CREATE (Anonim214:User  {name:'Anonim214',NAME_1: 'Leningrad',age:'31'})
+CREATE (Anonim215:User  {name:'Anonim215',NAME_1: 'Leningrad',age:'31'})
+CREATE (Anonim216:User  {name:'Anonim216',NAME_1: 'Leningrad',age:'31'})
+CREATE (Anonim217:User  {name:'Anonim217',NAME_1: 'Leningrad',age:'31'})
+CREATE (Anonim218:User  {name:'Anonim218',NAME_1: 'Leningrad',age:'31'})
+CREATE (Anonim219:User  {name:'Anonim219',NAME_1: 'Leningrad',age:'31'})
+CREATE (Anonim220:User  {name:'Anonim220',NAME_1: 'Leningrad',age:'36'})
+CREATE (Anonim221:User  {name:'Anonim221',NAME_1: 'Leningrad',age:'36'})
+CREATE (Anonim222:User  {name:'Anonim222',NAME_1: 'Leningrad',age:'36'})
+CREATE (Anonim223:User  {name:'Anonim223',NAME_1: 'Leningrad',age:'36'})
+CREATE (Anonim224:User  {name:'Anonim224',NAME_1: 'Leningrad',age:'36'})
+CREATE (Anonim225:User  {name:'Anonim225',NAME_1: 'Leningrad',age:'36'})
+CREATE (Anonim226:User  {name:'Anonim226',NAME_1: 'Leningrad',age:'38'})
+CREATE (Anonim227:User  {name:'Anonim227',NAME_1: 'Leningrad',age:'38'})
+CREATE (Anonim228:User  {name:'Anonim228',NAME_1: 'Leningrad',age:'38'})
+CREATE (Anonim229:User  {name:'Anonim229',NAME_1: 'Leningrad',age:'40'})
+CREATE (Anonim230:User  {name:'Anonim230',NAME_1: 'Leningrad',age:'55'})
+CREATE (Anonim231:User  {name:'Anonim231',NAME_1: 'Leningrad',age:'39'})
+CREATE (Anonim232:User  {name:'Anonim232',NAME_1: 'Leningrad',age:'61'})
+CREATE (Anonim233:User  {name:'Anonim233',NAME_1: 'Leningrad',age:'56'})
+CREATE (Anonim234:User  {name:'Anonim234',NAME_1: 'Leningrad',age:'46'})
+CREATE (Anonim235:User  {name:'Anonim235',NAME_1: 'Leningrad',age:'46'})
+CREATE (Anonim236:User  {name:'Anonim236',NAME_1: 'Leningrad',age:'56'})
+CREATE (Anonim237:User  {name:'Anonim237',NAME_1: 'Leningrad',age:'62'})
+CREATE (Anonim238:User  {name:'Anonim238',NAME_1: 'Leningrad',age:'17'})
+CREATE (Anonim239:User  {name:'Anonim239',NAME_1: 'Maga Buryatdan',age:'15'})
+CREATE (Anonim240:User  {name:'Anonim240',NAME_1: 'Maga Buryatdan',age:'17'})
+CREATE (Anonim241:User  {name:'Anonim241',NAME_1: 'Maga Buryatdan',age:'17'})
+CREATE (Anonim242:User  {name:'Anonim242',NAME_1: 'Maga Buryatdan',age:'22'})
+CREATE (Anonim243:User  {name:'Anonim243',NAME_1: 'Maga Buryatdan',age:'23'})
+CREATE (Anonim244:User  {name:'Anonim244',NAME_1: 'Maga Buryatdan',age:'25'})
+CREATE (Anonim245:User  {name:'Anonim245',NAME_1: 'Maga Buryatdan',age:'25'})
+CREATE (Anonim246:User  {name:'Anonim246',NAME_1: 'Maga Buryatdan',age:'25'})
+CREATE (Anonim247:User  {name:'Anonim247',NAME_1: 'Maga Buryatdan',age:'25'})
+CREATE (Anonim248:User  {name:'Anonim248',NAME_1: 'Maga Buryatdan',age:'33'})
+CREATE (Anonim249:User  {name:'Anonim249',NAME_1: 'Maga Buryatdan',age:'33'})
+CREATE (Anonim250:User  {name:'Anonim250',NAME_1: 'Maga Buryatdan',age:'33'})
+CREATE (Anonim251:User  {name:'Anonim251',NAME_1: 'Maga Buryatdan',age:'33'})
+CREATE (Anonim252:User  {name:'Anonim252',NAME_1: 'Maga Buryatdan',age:'33'})
+CREATE (Anonim253:User  {name:'Anonim253',NAME_1: 'Maga Buryatdan',age:'33'})
+CREATE (Anonim254:User  {name:'Anonim254',NAME_1: 'Maga Buryatdan',age:'43'})
+CREATE (Anonim255:User  {name:'Anonim255',NAME_1: 'Maga Buryatdan',age:'43'})
+CREATE (Anonim256:User  {name:'Anonim256',NAME_1: 'Maga Buryatdan',age:'43'})
+CREATE (Anonim257:User  {name:'Anonim257',NAME_1: 'Maga Buryatdan',age:'43'})
+CREATE (Anonim258:User  {name:'Anonim258',NAME_1: 'Maga Buryatdan',age:'563'})
+CREATE (Anonim259:User  {name:'Anonim259',NAME_1: 'Maga Buryatdan',age:'563'})
+CREATE (Anonim260:User  {name:'Anonim260',NAME_1: 'Maga Buryatdan',age:'563'})
+CREATE (Anonim261:User  {name:'Anonim261',NAME_1: 'Maga Buryatdan',age:'563'})
+CREATE (Anonim262:User  {name:'Anonim262',NAME_1: 'Moskva',age:'15'})
+CREATE (Anonim263:User  {name:'Anonim263',NAME_1: 'Moskva',age:'15'})
+CREATE (Anonim264:User  {name:'Anonim264',NAME_1: 'Moskva',age:'16'})
+CREATE (Anonim265:User  {name:'Anonim265',NAME_1: 'Moskva',age:'16'})
+CREATE (Anonim266:User  {name:'Anonim266',NAME_1: 'Moskva',age:'16'})
+CREATE (Anonim267:User  {name:'Anonim267',NAME_1: 'Moskva',age:'17'})
+CREATE (Anonim268:User  {name:'Anonim268',NAME_1: 'Moskva',age:'17'})
+CREATE (Anonim269:User  {name:'Anonim269',NAME_1: 'Moskva',age:'17'})
+CREATE (Anonim270:User  {name:'Anonim270',NAME_1: 'Moskva',age:'17'})
+CREATE (Anonim271:User  {name:'Anonim271',NAME_1: 'Moskva',age:'18'})
+CREATE (Anonim272:User  {name:'Anonim272',NAME_1: 'Moskva',age:'18'})
+CREATE (Anonim273:User  {name:'Anonim273',NAME_1: 'Moskva',age:'18'})
+CREATE (Anonim274:User  {name:'Anonim274',NAME_1: 'Moskva',age:'18'})
+CREATE (Anonim275:User  {name:'Anonim275',NAME_1: 'Moskva',age:'18'})
+CREATE (Anonim276:User  {name:'Anonim276',NAME_1: 'Moskva',age:'18'})
+CREATE (Anonim277:User  {name:'Anonim277',NAME_1: 'Moskva',age:'20'})
+CREATE (Anonim278:User  {name:'Anonim278',NAME_1: 'Moskva',age:'20'})
+CREATE (Anonim279:User  {name:'Anonim279',NAME_1: 'Moskva',age:'20'})
+CREATE (Anonim280:User  {name:'Anonim280',NAME_1: 'Moskva',age:'20'})
+CREATE (Anonim281:User  {name:'Anonim281',NAME_1: 'Moskva',age:'20'})
+CREATE (Anonim282:User  {name:'Anonim282',NAME_1: 'Moskva',age:'23'})
+CREATE (Anonim283:User  {name:'Anonim283',NAME_1: 'Moskva',age:'23'})
+CREATE (Anonim284:User  {name:'Anonim284',NAME_1: 'Moskva',age:'23'})
+CREATE (Anonim285:User  {name:'Anonim285',NAME_1: 'Moskva',age:'23'})
+CREATE (Anonim286:User  {name:'Anonim286',NAME_1: 'Moskva',age:'25'})
+CREATE (Anonim287:User  {name:'Anonim287',NAME_1: 'Moskva',age:'25'})
+CREATE (Anonim288:User  {name:'Anonim288',NAME_1: 'Moskva',age:'25'})
+CREATE (Anonim289:User  {name:'Anonim289',NAME_1: 'Moskva',age:'25'})
+CREATE (Anonim290:User  {name:'Anonim290',NAME_1: 'Moskva',age:'25'})
+CREATE (Anonim291:User  {name:'Anonim291',NAME_1: 'Moskva',age:'27'})
+CREATE (Anonim292:User  {name:'Anonim292',NAME_1: 'Moskva',age:'27'})
+CREATE (Anonim293:User  {name:'Anonim293',NAME_1: 'Moskva',age:'33'})
+CREATE (Anonim294:User  {name:'Anonim294',NAME_1: 'Moskva',age:'33'})
+CREATE (Anonim295:User  {name:'Anonim295',NAME_1: 'Moskva',age:'33'})
+CREATE (Anonim296:User  {name:'Anonim296',NAME_1: 'Moskva',age:'44'})
+CREATE (Anonim297:User  {name:'Anonim297',NAME_1: 'Moskva',age:'44'})
+CREATE (Anonim298:User  {name:'Anonim298',NAME_1: 'Moskva',age:'44'})
+CREATE (Anonim299:User  {name:'Anonim299',NAME_1: 'Moskva',age:'44'})
+CREATE (Anonim300:User  {name:'Anonim300',NAME_1: 'Moskva',age:'55'})
+CREATE (Anonim301:User  {name:'Anonim301',NAME_1: 'Moskva',age:'55'})
+CREATE (Anonim302:User  {name:'Anonim302',NAME_1: 'Moskva',age:'55'})
+CREATE (Anonim303:User  {name:'Anonim303',NAME_1: 'Moskva',age:'55'})
+CREATE (Anonim304:User  {name:'Anonim304',NAME_1: 'Moskva',age:'66'})
+CREATE (Anonim305:User  {name:'Anonim305',NAME_1: 'Moskva',age:'66'})
+CREATE (Anonim306:User  {name:'Anonim306',NAME_1: 'Moskva',age:'66'})
+CREATE (Anonim307:User  {name:'Anonim307',NAME_1: 'Moskva',age:'66'})
+CREATE (Anonim308:User  {name:'Anonim308',NAME_1: 'Novgorod',age:'15'})
+CREATE (Anonim309:User  {name:'Anonim309',NAME_1: 'Novgorod',age:'15'})
+CREATE (Anonim310:User  {name:'Anonim310',NAME_1: 'Novgorod',age:'25'})
+CREATE (Anonim311:User  {name:'Anonim311',NAME_1: 'Novgorod',age:'25'})
+CREATE (Anonim312:User  {name:'Anonim312',NAME_1: 'Novgorod',age:'25'})
+CREATE (Anonim313:User  {name:'Anonim313',NAME_1: 'Novgorod',age:'27'})
+CREATE (Anonim314:User  {name:'Anonim314',NAME_1: 'Novgorod',age:'28'})
+CREATE (Anonim315:User  {name:'Anonim315',NAME_1: 'Novgorod',age:'35'})
+CREATE (Anonim316:User  {name:'Anonim316',NAME_1: 'Novgorod',age:'35'})
+CREATE (Anonim317:User  {name:'Anonim317',NAME_1: 'Novgorod',age:'35'})
+CREATE (Anonim318:User  {name:'Anonim318',NAME_1: 'Novgorod',age:'35'})
+CREATE (Anonim319:User  {name:'Anonim319',NAME_1: 'Novgorod',age:'37'})
+CREATE (Anonim320:User  {name:'Anonim320',NAME_1: 'Novgorod',age:'43'})
+CREATE (Anonim321:User  {name:'Anonim321',NAME_1: 'Novgorod',age:'44'})
+CREATE (Anonim322:User  {name:'Anonim322',NAME_1: 'Novgorod',age:'45'})
+CREATE (Anonim323:User  {name:'Anonim323',NAME_1: 'Novgorod',age:'45'})
+CREATE (Anonim324:User  {name:'Anonim324',NAME_1: 'Novgorod',age:'45'})
+CREATE (Anonim325:User  {name:'Anonim325',NAME_1: 'Novgorod',age:'49'})
+CREATE (Anonim326:User  {name:'Anonim326',NAME_1: 'Novgorod',age:'52'})
+CREATE (Anonim327:User  {name:'Anonim327',NAME_1: 'Novgorod',age:'53'})
+CREATE (Anonim328:User  {name:'Anonim328',NAME_1: 'Novgorod',age:'55'})
+CREATE (Anonim329:User  {name:'Anonim329',NAME_1: 'Novgorod',age:'55'})
+CREATE (Anonim330:User  {name:'Anonim330',NAME_1: 'Novgorod',age:'55'})
+CREATE (Anonim331:User  {name:'Anonim331',NAME_1: 'Novgorod',age:'55'})
+CREATE (Anonim332:User  {name:'Anonim332',NAME_1: 'Novgorod',age:'61'})
+CREATE (Anonim333:User  {name:'Anonim333',NAME_1: 'Novgorod',age:'64'})
+CREATE (Anonim334:User  {name:'Anonim334',NAME_1: 'Novgorod',age:'65'})
+CREATE (Anonim335:User  {name:'Anonim335',NAME_1: 'Novgorod',age:'65'})
+CREATE (Anonim336:User  {name:'Anonim336',NAME_1: 'Novgorod',age:'65'})
+CREATE (Anonim337:User  {name:'Anonim337',NAME_1: 'Novgorod',age:'67'})
+CREATE (Anonim338:User  {name:'Anonim338',NAME_1: 'Novgorod',age:'80'})
+CREATE (Anonim339:User  {name:'Anonim339',NAME_1: 'Novgorod',age:'71'})
+CREATE (Anonim340:User  {name:'Anonim340',NAME_1: 'Novosibirsk',age:'15'})
+CREATE (Anonim341:User  {name:'Anonim341',NAME_1: 'Novosibirsk',age:'15'})
+CREATE (Anonim342:User  {name:'Anonim342',NAME_1: 'Novosibirsk',age:'25'})
+CREATE (Anonim343:User  {name:'Anonim343',NAME_1: 'Novosibirsk',age:'25'})
+CREATE (Anonim344:User  {name:'Anonim344',NAME_1: 'Novosibirsk',age:'25'})
+CREATE (Anonim345:User  {name:'Anonim345',NAME_1: 'Novosibirsk',age:'27'})
+CREATE (Anonim346:User  {name:'Anonim346',NAME_1: 'Novosibirsk',age:'28'})
+CREATE (Anonim347:User  {name:'Anonim347',NAME_1: 'Novosibirsk',age:'35'})
+CREATE (Anonim348:User  {name:'Anonim348',NAME_1: 'Novosibirsk',age:'35'})
+CREATE (Anonim349:User  {name:'Anonim349',NAME_1: 'Novosibirsk',age:'35'})
+CREATE (Anonim350:User  {name:'Anonim350',NAME_1: 'Novosibirsk',age:'35'})
+CREATE (Anonim351:User  {name:'Anonim351',NAME_1: 'Novosibirsk',age:'37'})
+CREATE (Anonim352:User  {name:'Anonim352',NAME_1: 'Novosibirsk',age:'43'})
+CREATE (Anonim353:User  {name:'Anonim353',NAME_1: 'Novosibirsk',age:'44'})
+CREATE (Anonim354:User  {name:'Anonim354',NAME_1: 'Novosibirsk',age:'45'})
+CREATE (Anonim355:User  {name:'Anonim355',NAME_1: 'Novosibirsk',age:'45'})
+CREATE (Anonim356:User  {name:'Anonim356',NAME_1: 'Novosibirsk',age:'45'})
+CREATE (Anonim357:User  {name:'Anonim357',NAME_1: 'Novosibirsk',age:'49'})
+CREATE (Anonim358:User  {name:'Anonim358',NAME_1: 'Novosibirsk',age:'52'})
+CREATE (Anonim359:User  {name:'Anonim359',NAME_1: 'Novosibirsk',age:'53'})
+CREATE (Anonim360:User  {name:'Anonim360',NAME_1: 'Novosibirsk',age:'55'})
+CREATE (Anonim361:User  {name:'Anonim361',NAME_1: 'Novosibirsk',age:'55'})
+CREATE (Anonim362:User  {name:'Anonim362',NAME_1: 'Novosibirsk',age:'55'})
+CREATE (Anonim363:User  {name:'Anonim363',NAME_1: 'Novosibirsk',age:'55'})
+CREATE (Anonim364:User  {name:'Anonim364',NAME_1: 'Novosibirsk',age:'61'})
+CREATE (Anonim365:User  {name:'Anonim365',NAME_1: 'Novosibirsk',age:'64'})
+CREATE (Anonim366:User  {name:'Anonim366',NAME_1: 'Novosibirsk',age:'65'})
+CREATE (Anonim367:User  {name:'Anonim367',NAME_1: 'Novosibirsk',age:'24'})
+CREATE (Anonim368:User  {name:'Anonim368',NAME_1: 'Novosibirsk',age:'26'})
+CREATE (Anonim369:User  {name:'Anonim369',NAME_1: 'Novosibirsk',age:'25'})
+CREATE (Anonim370:User  {name:'Anonim370',NAME_1: 'Novosibirsk',age:'33'})
+CREATE (Anonim371:User  {name:'Anonim371',NAME_1: 'Novosibirsk',age:'31'})
+CREATE (Anonim372:User  {name:'Anonim372',NAME_1: 'Novosibirsk',age:'41'})
+CREATE (Anonim373:User  {name:'Anonim373',NAME_1: 'Novosibirsk',age:'37'})
+CREATE (Anonim374:User  {name:'Anonim374',NAME_1: 'Novosibirsk',age:'21'})
+CREATE (Anonim375:User  {name:'Anonim375',NAME_1: 'Novosibirsk',age:'20'})
+CREATE (Anonim376:User  {name:'Anonim376',NAME_1: 'Novosibirsk',age:'18'})
+CREATE (Anonim377:User  {name:'Anonim377',NAME_1: 'Pskov',age:'25'})
+CREATE (Anonim378:User  {name:'Anonim378',NAME_1: 'Pskov',age:'25'})
+CREATE (Anonim379:User  {name:'Anonim379',NAME_1: 'Pskov',age:'27'})
+CREATE (Anonim380:User  {name:'Anonim380',NAME_1: 'Pskov',age:'28'})
+CREATE (Anonim381:User  {name:'Anonim381',NAME_1: 'Pskov',age:'35'})
+CREATE (Anonim382:User  {name:'Anonim382',NAME_1: 'Pskov',age:'35'})
+CREATE (Anonim383:User  {name:'Anonim383',NAME_1: 'Pskov',age:'35'})
+CREATE (Anonim384:User  {name:'Anonim384',NAME_1: 'Pskov',age:'35'})
+CREATE (Anonim385:User  {name:'Anonim385',NAME_1: 'Pskov',age:'37'})
+CREATE (Anonim386:User  {name:'Anonim386',NAME_1: 'Pskov',age:'43'})
+CREATE (Anonim387:User  {name:'Anonim387',NAME_1: 'Pskov',age:'44'})
+CREATE (Anonim388:User  {name:'Anonim388',NAME_1: 'Pskov',age:'45'})
+CREATE (Anonim389:User  {name:'Anonim389',NAME_1: 'Pskov',age:'45'})
+CREATE (Anonim390:User  {name:'Anonim390',NAME_1: 'Pskov',age:'45'})
+CREATE (Anonim391:User  {name:'Anonim391',NAME_1: 'Pskov',age:'49'})
+CREATE (Anonim392:User  {name:'Anonim392',NAME_1: 'Pskov',age:'52'})
+CREATE (Anonim393:User  {name:'Anonim393',NAME_1: 'Pskov',age:'53'})
+CREATE (Anonim394:User  {name:'Anonim394',NAME_1: 'Pskov',age:'55'})
+CREATE (Anonim395:User  {name:'Anonim395',NAME_1: 'Pskov',age:'55'})
+CREATE (Anonim396:User  {name:'Anonim396',NAME_1: 'Pskov',age:'55'})
+CREATE (Anonim397:User  {name:'Anonim397',NAME_1: 'Pskov',age:'55'})
+CREATE (Anonim398:User  {name:'Anonim398',NAME_1: 'Pskov',age:'61'})
+CREATE (Anonim399:User  {name:'Anonim399',NAME_1: 'Pskov',age:'64'})
+CREATE (Anonim400:User  {name:'Anonim400',NAME_1: 'Pskov',age:'65'})
+CREATE (Anonim401:User  {name:'Anonim401',NAME_1: 'Pskov',age:'24'})
+CREATE (Anonim402:User  {name:'Anonim402',NAME_1: 'Pskov',age:'26'})
+CREATE (Anonim403:User  {name:'Anonim403',NAME_1: 'Pskov',age:'25'})
+CREATE (Anonim404:User  {name:'Anonim404',NAME_1: 'Pskov',age:'33'})
+CREATE (Anonim405:User  {name:'Anonim405',NAME_1: 'Pskov',age:'31'})
+CREATE (Anonim406:User  {name:'Anonim406',NAME_1: 'Pskov',age:'41'})
+CREATE (Anonim407:User  {name:'Anonim407',NAME_1: 'Pskov',age:'37'})
+CREATE (Anonim408:User  {name:'Anonim408',NAME_1: 'Pskov',age:'21'})
+CREATE (Anonim409:User  {name:'Anonim409',NAME_1: 'Pskov',age:'20'})
+CREATE (Anonim410:User  {name:'Anonim410',NAME_1: 'Pskov',age:'18'})
+CREATE (Anonim411:User  {name:'Anonim411',NAME_1: 'Pskov',age:'16'})
+CREATE (Anonim412:User  {name:'Anonim412',NAME_1: 'Sakha',age:'22'})
+CREATE (Anonim413:User  {name:'Anonim413',NAME_1: 'Sakha',age:'32'})
+CREATE (Anonim414:User  {name:'Anonim414',NAME_1: 'Sakha',age:'42'})
+CREATE (Anonim415:User  {name:'Anonim415',NAME_1: 'Sakha',age:'52'})
+CREATE (Anonim416:User  {name:'Anonim416',NAME_1: 'Sakha',age:'62'})
+CREATE (Anonim417:User  {name:'Anonim417',NAME_1: 'Sakha',age:'62'})
+CREATE (Anonim418:User  {name:'Anonim418',NAME_1: 'Sakha',age:'22'})
+CREATE (Anonim419:User  {name:'Anonim419',NAME_1: 'Sakha',age:'22'})
+CREATE (Anonim420:User  {name:'Anonim420',NAME_1: 'Sakha',age:'27'})
+CREATE (Anonim421:User  {name:'Anonim421',NAME_1: 'Sakha',age:'27'})
+CREATE (Anonim422:User  {name:'Anonim422',NAME_1: 'Sakha',age:'27'})
+CREATE (Anonim423:User  {name:'Anonim423',NAME_1: 'Samara',age:'17'})
+CREATE (Anonim424:User  {name:'Anonim424',NAME_1: 'Samara',age:'50'})
+CREATE (Anonim425:User  {name:'Anonim425',NAME_1: 'Samara',age:'18'})
+CREATE (Anonim426:User  {name:'Anonim426',NAME_1: 'Samara',age:'18'})
+CREATE (Anonim427:User  {name:'Anonim427',NAME_1: 'Samara',age:'18'})
+CREATE (Anonim428:User  {name:'Anonim428',NAME_1: 'Samara',age:'18'})
+CREATE (Anonim429:User  {name:'Anonim429',NAME_1: 'Samara',age:'18'})
+CREATE (Anonim430:User  {name:'Anonim430',NAME_1: 'Samara',age:'18'})
+CREATE (Anonim431:User  {name:'Anonim431',NAME_1: 'Samara',age:'20'})
+CREATE (Anonim432:User  {name:'Anonim432',NAME_1: 'Samara',age:'20'})
+CREATE (Anonim433:User  {name:'Anonim433',NAME_1: 'Samara',age:'20'})
+CREATE (Anonim434:User  {name:'Anonim434',NAME_1: 'Samara',age:'20'})
+CREATE (Anonim435:User  {name:'Anonim435',NAME_1: 'Samara',age:'20'})
+CREATE (Anonim436:User  {name:'Anonim436',NAME_1: 'Samara',age:'23'})
+CREATE (Anonim437:User  {name:'Anonim437',NAME_1: 'Samara',age:'23'})
+CREATE (Anonim438:User  {name:'Anonim438',NAME_1: 'Samara',age:'41'})
+CREATE (Anonim439:User  {name:'Anonim439',NAME_1: 'Samara',age:'44'})
+CREATE (Anonim440:User  {name:'Anonim440',NAME_1: 'Samara',age:'25'})
+CREATE (Anonim441:User  {name:'Anonim441',NAME_1: 'Samara',age:'25'})
+CREATE (Anonim442:User  {name:'Anonim442',NAME_1: 'Samara',age:'25'})
+CREATE (Anonim443:User  {name:'Anonim443',NAME_1: 'Samara',age:'25'})
+CREATE (Anonim444:User  {name:'Anonim444',NAME_1: 'Samara',age:'25'})
+CREATE (Anonim445:User  {name:'Anonim445',NAME_1: 'Samara',age:'27'})
+CREATE (Anonim446:User  {name:'Anonim446',NAME_1: 'Samara',age:'27'})
+CREATE (Anonim447:User  {name:'Anonim447',NAME_1: 'Samara',age:'33'})
+CREATE (Anonim448:User  {name:'Anonim448',NAME_1: 'Samara',age:'33'})
+CREATE (Anonim449:User  {name:'Anonim449',NAME_1: 'Samara',age:'33'})
+CREATE (Anonim450:User  {name:'Anonim450',NAME_1: 'Samara',age:'44'})
+CREATE (Anonim451:User  {name:'Anonim451',NAME_1: 'Samara',age:'44'})
+CREATE (Anonim452:User  {name:'Anonim452',NAME_1: 'Samara',age:'44'})
+CREATE (Anonim453:User  {name:'Anonim453',NAME_1: 'Samara',age:'44'})
+CREATE (Anonim454:User  {name:'Anonim454',NAME_1: 'Samara',age:'55'})
+CREATE (Anonim455:User  {name:'Anonim455',NAME_1: 'Yamal-Nenets',age:'17'})
+CREATE (Anonim456:User  {name:'Anonim456',NAME_1: 'Yamal-Nenets',age:'17'})
+CREATE (Anonim457:User  {name:'Anonim457',NAME_1: 'Yamal-Nenets',age:'18'})
+CREATE (Anonim458:User  {name:'Anonim458',NAME_1: 'Yamal-Nenets',age:'18'})
+CREATE (Anonim459:User  {name:'Anonim459',NAME_1: 'Yamal-Nenets',age:'18'})
+CREATE (Anonim460:User  {name:'Anonim460',NAME_1: 'Yamal-Nenets',age:'18'})
+CREATE (Anonim461:User  {name:'Anonim461',NAME_1: 'Yamal-Nenets',age:'18'})
+CREATE (Anonim462:User  {name:'Anonim462',NAME_1: 'Yamal-Nenets',age:'18'})
+CREATE (Anonim463:User  {name:'Anonim463',NAME_1: 'Yamal-Nenets',age:'20'})
+CREATE (Anonim464:User  {name:'Anonim464',NAME_1: 'Yamal-Nenets',age:'33'})
+CREATE (Anonim465:User  {name:'Anonim465',NAME_1: 'Yamal-Nenets',age:'31'})
+CREATE (Anonim466:User  {name:'Anonim466',NAME_1: 'Yamal-Nenets',age:'20'})
+CREATE (Anonim467:User  {name:'Anonim467',NAME_1: 'Yamal-Nenets',age:'20'})
+CREATE (Anonim468:User  {name:'Anonim468',NAME_1: 'Yamal-Nenets',age:'23'})
+CREATE (Anonim469:User  {name:'Anonim469',NAME_1: 'Yamal-Nenets',age:'17'})
+CREATE (Anonim470:User  {name:'Anonim470',NAME_1: 'Yamal-Nenets',age:'17'})
+CREATE (Anonim471:User  {name:'Anonim471',NAME_1: 'Yamal-Nenets',age:'55'})
+CREATE (Anonim472:User  {name:'Anonim472',NAME_1: 'Yamal-Nenets',age:'25'})
+CREATE (Anonim473:User  {name:'Anonim473',NAME_1: 'Yamal-Nenets',age:'25'})
+CREATE (Anonim474:User  {name:'Anonim474',NAME_1: 'Yamal-Nenets',age:'25'})
+CREATE (Anonim475:User  {name:'Anonim475',NAME_1: 'Yamal-Nenets',age:'25'})
+CREATE (Anonim476:User  {name:'Anonim476',NAME_1: 'Yamal-Nenets',age:'25'})
+CREATE (Anonim477:User  {name:'Anonim477',NAME_1: 'Yamal-Nenets',age:'27'})
+CREATE (Anonim478:User  {name:'Anonim478',NAME_1: 'Yamal-Nenets',age:'27'})
+CREATE (Anonim479:User  {name:'Anonim479',NAME_1: 'Yamal-Nenets',age:'33'})
+CREATE (Anonim480:User  {name:'Anonim480',NAME_1: 'Yamal-Nenets',age:'33'})
+CREATE (Anonim481:User  {name:'Anonim481',NAME_1: 'Yamal-Nenets',age:'33'})
+CREATE (Anonim482:User  {name:'Anonim482',NAME_1: 'Yamal-Nenets',age:'44'})
+CREATE (Anonim483:User  {name:'Anonim483',NAME_1: 'Yamal-Nenets',age:'44'})
+CREATE (Anonim484:User  {name:'Anonim484',NAME_1: 'Yamal-Nenets',age:'44'})
+CREATE (Anonim485:User  {name:'Anonim485',NAME_1: 'Yamal-Nenets',age:'44'})
+CREATE (Anonim486:User  {name:'Anonim486',NAME_1: 'Yamal-Nenets',age:'55'})
+CREATE (Anonim487:User  {name:'Anonim487',NAME_1: 'Yamal-Nenets',age:'55'})
+CREATE (Anonim488:User  {name:'Anonim488',NAME_1: 'Yamal-Nenets',age:'55'})
+CREATE (Anonim489:User  {name:'Anonim489',NAME_1: 'Yamal-Nenets',age:'55'})
+CREATE (Anonim490:User  {name:'Anonim490',NAME_1: 'Yamal-Nenets',age:'66'})
+CREATE (Anonim491:User  {name:'Anonim491',NAME_1: 'Yamal-Nenets',age:'18'})
+
+ CREATE (Region1:Region {NAME_1:'Belgorod', ID_1:'8', value:'87', rating2:'0', rating3:'27', rating4:'45', rating5:'15', age15_17:'3', age18_25:'41', age26_30:'33', age31_40:'9', age41_60:'1', age61:'0'})
+ CREATE (Region2:Region {NAME_1: 'Crimea',ID_1:'4', value: '34', rating2:'1', rating3:'3', rating4:'20', rating5:'10', age15_17:'1', age18_25:'13', age26_30:'7', age31_40:'8', age41_60:'4', age61:'1'})
+ CREATE (Region3:Region {NAME_1: 'Amur',ID_1:'4', value: '45', rating2:'0', rating3:'7', rating4:'30', rating5:'8', age15_17:'2', age18_25:'21', age26_30:'17', age31_40:'2', age41_60:'0', age61:'3'})
+ CREATE (Region4:Region {NAME_1: 'Arkhangelsk',ID_1:'5', value: '70', rating2:'2', rating3:'16', rating4:'48', rating5:'4', age15_17:'0', age18_25:'30', age26_30:'13', age31_40:'20', age41_60:'4', age61:'3'})
+ CREATE (Region5:Region {NAME_1: 'Chechnya',ID_1:'11', value: '5', rating2:'0', rating3:'0', rating4:'4', rating5:'1', age15_17:'0', age18_25:'1', age26_30:'4', age31_40:'0', age41_60:'0', age61:'0'})
+ CREATE (Region6:Region {NAME_1: 'Chukot',ID_1:'14', value: '7500', rating2:'250', rating3:'750', rating4:'4500', rating5:'3000', age15_17:'654', age18_25:'4100', age26_30:'1890', age31_40:'710', age41_60:'140', age61:'6'})
+ CREATE (Region7:Region {NAME_1: 'Ivanovo',ID_1:'22', value: '1000', rating2:'117', rating3:'200', rating4:'603', rating5:'80', age15_17:'175', age18_25:'471', age26_30:'302', age31_40:'33', age41_60:'16', age61:'3'})
+ CREATE (Region8:Region {NAME_1: 'Karachay-Cherkess',ID_1:'28', value: '10', rating2:'0', rating3:'0', rating4:'3', rating5:'7', age15_17:'0', age18_25:'7', age26_30:'2', age31_40:'1', age41_60:'0', age61:'0'})
+ CREATE (Region9:Region {NAME_1: 'Karelia',ID_1:'29', value: '66', rating2:'0', rating3:'12', rating4:'34', rating5:'20', age15_17:'4', age18_25:'40', age26_30:'15', age31_40:'5', age41_60:'2', age61:'0'})
+ CREATE (Region10:Region {NAME_1: 'Kemerovo',ID_1:'30', value: '18', rating2:'1', rating3:'2', rating4:'5', rating5:'10', age15_17:'1', age18_25:'7', age26_30:'7', age31_40:'1', age41_60:'1', age61:'1'})
+ CREATE (Region11:Region {NAME_1: 'Khabarovsk',ID_1:'31', value: '1', rating2:'0', rating3:'0', rating4:'1', rating5:'0', age15_17:'0', age18_25:'1', age26_30:'0', age31_40:'0', age41_60:'0', age61:'0'})
+ CREATE (Region12:Region {NAME_1: 'Khanty-Mansiy',ID_1:'33', value: '120000', rating2:'1100', rating3:'30000', rating4:'80900', rating5:'18000', age15_17:'33111', age18_25:'52444', age26_30:'21010', age31_40:'13000', age41_60:'400', age61:'35'})
+ CREATE (Region13:Region {NAME_1: 'Komi',ID_1:'36', value: '500', rating2:'0', rating3:'100', rating4:'350', rating5:'50', age15_17:'25', age18_25:'205', age26_30:'100', age31_40:'130', age41_60:'31', age61:'9'})
+ CREATE (Region14:Region {NAME_1: 'Krasnoyarsk',ID_1:'40', value: '1125', rating2:'125', rating3:'310', rating4:'490', rating5:'200', age15_17:'3', age18_25:'708', age26_30:'310', age31_40:'25', age41_60:'46', age61:'33'})
+ CREATE (Region15:Region {NAME_1: 'Leningrad',ID_1:'43', value: '43760', rating2:'174', rating3:'11826', rating4:'21760', rating5:'10000', age15_17:'8200', age18_25:'17666', age26_30:'15200', age31_40:'2100', age41_60:'500', age61:'94'})
+ CREATE (Region16:Region {NAME_1: 'Maga Buryatdan',ID_1:'45', value: '46', rating2:'0', rating3:'0', rating4:'45', rating5:'1', age15_17:'0', age18_25:'33', age26_30:'10', age31_40:'3', age41_60:'0', age61:'0'})
+ CREATE (Region17:Region {NAME_1: 'Moskva',ID_1:'49', value: '55879', rating2:'311', rating3:'10100', rating4:'25100', rating5:'20368', age15_17:'13100', age18_25:'28410', age26_30:'10402', age31_40:'3100', age41_60:'867', age61:'100'})
+ CREATE (Region18:Region {NAME_1: 'Novgorod',ID_1:'54', value: '77', rating2:'0', rating3:'17', rating4:'50', rating5:'10', age15_17:'15', age18_25:'50', age26_30:'12', age31_40:'0', age41_60:'0', age61:'0'})
+ CREATE (Region19:Region {NAME_1: 'Novosibirsk',ID_1:'55', value: '15000', rating2:'134', rating3:'5166', rating4:'7700', rating5:'2000', age15_17:'361', age18_25:'7500', age26_30:'6320', age31_40:'800', age41_60:'17', age61:'2'})
+ CREATE (Region20:Region {NAME_1: 'Pskov',ID_1:'62', value: '1200', rating2:'12', rating3:'88', rating4:'740', rating5:'360', age15_17:'71', age18_25:'502', age26_30:'344', age31_40:'217', age41_60:'60', age61:'6'})
+ CREATE (Region21:Region {NAME_1: 'Sakha',ID_1:'65', value: '33000', rating2:'3000', rating3:'10000', rating4:'20000', rating5:'0', age15_17:'4000', age18_25:'18470', age26_30:'10301', age31_40:'220', age41_60:'8', age61:'1'})
+ CREATE (Region22:Region {NAME_1: 'Samara',ID_1:'67', value: '567', rating2:'4', rating3:'296', rating4:'200', rating5:'67', age15_17:'7', age18_25:'310', age26_30:'141', age31_40:'58', age41_60:'33', age61:'18'})
+ CREATE (Region23:Region {NAME_1: 'Yamal-Nenets',ID_1:'87', value: '78300', rating2:'300', rating3:'1200', rating4:'33000', rating5:'43800', age15_17:'1401', age18_25:'39200', age26_30:'31011', age31_40:'3560', age41_60:'3000', age61:'128'})
+
+CREATE
+  (RRegions)-[:NAME]->(Region1),
+  (RRegions)-[:NAME]->(Region2),
+  (RRegions)-[:NAME]->(Region3),
+  (RRegions)-[:NAME]->(Region4),
+  (RRegions)-[:NAME]->(Region5),
+  (RRegions)-[:NAME]->(Region6),
+  (RRegions)-[:NAME]->(Region7),
+  (RRegions)-[:NAME]->(Region8),
+  (RRegions)-[:NAME]->(Region9),
+  (RRegions)-[:NAME]->(Region10),
+  (RRegions)-[:NAME]->(Region11),
+  (RRegions)-[:NAME]->(Region12),
+  (RRegions)-[:NAME]->(Region13),
+  (RRegions)-[:NAME]->(Region14),
+  (RRegions)-[:NAME]->(Region15),
+  (RRegions)-[:NAME]->(Region16),
+  (RRegions)-[:NAME]->(Region17),
+  (RRegions)-[:NAME]->(Region18),
+  (RRegions)-[:NAME]->(Region19),
+  (RRegions)-[:NAME]->(Region20),
+  (RRegions)-[:NAME]->(Region21),
+  (RRegions)-[:NAME]->(Region22),
+  (RRegions)-[:NAME]->(Region23)
+
+
+
+CREATE
+  (CCourses)-[:COURSE_IS]->(Course1)-[:STUDY {user:['User №1']}]->(User1),
+  (CCourses)-[:COURSE_IS]->(Course1)-[:STUDY {user:['User №5']}]->(User5),
+  (CCourses)-[:COURSE_IS]->(Course1)-[:STUDY {user:['User №10']}]->(User10),
+  (CCourses)-[:COURSE_IS]->(Course2)-[:STUDY {user:['User №2']}]->(User2),
+  (CCourses)-[:COURSE_IS]->(Course3)-[:STUDY {user:['User №4']}]->(User4),
+  (CCourses)-[:COURSE_IS]->(Course4)-[:STUDY {user:['User №7']}]->(User7),
+  (CCourses)-[:COURSE_IS]->(Course4)-[:STUDY {user:['User №3']}]->(User3),
+  (CCourses)-[:COURSE_IS]->(Course5)-[:STUDY {user:['User №11']}]->(User11),
+  (CCourses)-[:COURSE_IS]->(Course6)-[:STUDY {user:['User №3']}]->(User3),
+  (CCourses)-[:COURSE_IS]->(Course7)-[:STUDY {user:['User №9']}]->(User9),
+  (CCourses)-[:COURSE_IS]->(Course7)-[:STUDY {user:['User №1']}]->(User1),
+  (CCourses)-[:COURSE_IS]->(Course8)-[:STUDY {user:['User №6']}]->(User6),
+  (CCourses)-[:COURSE_IS]->(Course9)-[:STUDY {user:['User №8']}]->(User8),
+  (CCourses)-[:COURSE_IS]->(Course10)-[:STUDY {user:['User №11']}]->(User11)
+
+
+
+CREATE (Status1:Status {name:'Completed'})
+CREATE (Status2:Status {name:'Not completed'})
+
+
+CREATE (Rating2:Rating {rating:'2'})
+CREATE (Rating3:Rating {rating:'3'})
+CREATE (Rating4:Rating {rating:'4'})
+CREATE (Rating5:Rating {rating:'5'})
+
+
+CREATE
+  (UUsers)-[:ABOUT_USER]->(Anonim1)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim2)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim3)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim4)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim5)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim6)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim7)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim8)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim9)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim10)-[:LEARN ]->(Course9)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim11)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim12)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim13)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim14)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim15)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim16)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim17)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim18)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim19)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim20)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim21)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim22)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim23)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim24)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim25)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim26)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim27)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim28)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim29)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim30)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim31)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim32)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim33)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim34)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim35)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim36)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim37)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim38)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim39)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim40)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim41)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim42)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim43)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim44)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim45)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim46)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim47)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim48)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim49)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim50)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim51)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim52)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim53)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim54)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim55)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim56)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim57)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim58)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim59)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim60)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim61)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim62)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim63)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim64)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim65)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim66)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim67)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim68)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim69)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim70)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim71)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim72)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim73)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim74)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim75)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim76)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim77)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim78)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim79)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim80)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim81)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim82)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim83)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim84)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim85)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim86)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim87)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim88)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim89)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim90)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim91)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim92)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim93)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim94)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim95)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim96)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim97)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim98)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim99)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim100)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim101)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim102)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim103)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim104)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim105)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim106)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim107)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim108)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim109)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim110)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim111)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim112)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim113)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim114)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim115)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim116)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim117)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim118)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim119)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim120)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim121)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim122)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim123)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim124)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim125)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim126)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim127)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim128)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim129)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim130)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim131)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim132)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim133)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim134)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim135)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim136)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim137)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim138)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim139)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim130)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim141)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim142)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim143)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim144)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim145)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim146)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim147)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim148)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim149)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim150)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim151)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim152)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim153)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim154)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim155)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim156)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim157)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim158)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim159)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim160)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim161)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim162)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim163)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim164)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim165)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim166)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim167)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim168)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim169)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim170)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim171)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim172)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim173)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim174)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim175)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim176)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim177)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim178)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim179)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim180)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim181)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim182)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim183)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim184)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim185)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim186)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim187)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim188)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim189)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim190)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim191)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim192)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim193)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim194)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim195)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim196)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim197)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim198)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim199)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim200)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim201)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim202)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim203)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim204)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim205)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim206)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim207)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim208)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim209)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim210)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim211)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim212)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim213)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim214)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim215)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim216)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim217)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim218)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim219)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim220)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim221)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim222)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim223)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim224)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim225)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim226)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim227)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim228)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim229)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim230)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim231)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim232)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim233)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim234)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim235)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim236)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim237)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim238)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim239)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim240)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim241)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim242)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim243)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim244)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim245)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim246)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim247)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim248)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim249)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim250)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim251)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim252)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim253)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim254)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim255)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim256)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim257)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim258)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim259)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim260)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim261)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim262)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim263)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim264)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim265)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim266)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim267)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim268)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim269)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim270)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim271)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim272)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim273)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim274)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim275)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim276)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim277)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim278)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim279)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim280)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim281)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim282)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim283)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim284)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim285)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim286)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim287)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim288)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim289)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim290)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim291)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim292)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim293)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim294)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim295)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim296)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim297)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim298)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim299)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim300)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim301)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim302)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim303)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim304)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim305)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim306)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim307)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim308)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim309)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim310)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim311)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim312)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim313)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim314)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim315)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim316)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim317)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim318)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim319)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim320)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim321)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim322)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim323)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim324)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim325)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim326)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim327)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim328)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim329)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim330)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim331)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim332)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim333)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim334)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim335)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim336)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim337)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim338)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim339)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim340)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim341)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim342)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim343)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim344)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim345)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim346)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim347)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim348)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim349)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim350)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim351)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim352)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim353)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim354)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim355)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim356)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim357)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim358)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim359)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim360)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim361)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim362)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim363)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim364)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim365)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim366)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim367)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim368)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim369)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim370)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim371)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim372)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim373)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim374)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim375)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim376)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim377)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim378)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim379)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim380)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim381)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim382)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim383)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim384)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim385)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim386)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim387)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim388)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim389)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim390)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim391)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim392)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim393)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim394)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim395)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim396)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim397)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim398)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim399)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim400)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim401)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim402)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim403)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim404)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim405)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim406)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim407)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim408)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim409)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim410)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim411)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim412)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim413)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim414)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim415)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim416)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim417)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim418)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim419)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim420)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim421)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim422)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim423)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim424)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim425)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim426)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim427)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim428)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim429)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim430)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim431)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim432)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim433)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim434)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim435)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim436)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim437)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim438)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim439)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim440)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim441)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim442)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim443)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim444)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim445)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim446)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim447)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim448)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim449)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim450)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim451)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim452)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim453)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim454)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim455)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim456)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim457)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating3),
+  (UUsers)-[:ABOUT_USER]->(Anonim458)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim459)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim460)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim461)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating2),
+  (UUsers)-[:ABOUT_USER]->(Anonim462)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim463)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim464)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim465)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim466)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim467)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim468)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim469)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim470)-[:LEARN ]->(Course5)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim471)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim472)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim473)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim474)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim475)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim476)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim477)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim478)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim479)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim480)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim481)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim482)-[:LEARN ]->(Course2)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim483)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim484)-[:LEARN ]->(Course6)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim485)-[:LEARN ]->(Course3)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim486)-[:LEARN ]->(Course1)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim487)-[:LEARN ]->(Course8)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim488)-[:LEARN ]->(Course4)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating5),
+  (UUsers)-[:ABOUT_USER]->(Anonim489)-[:LEARN ]->(Course9)-[:STUDY_STATUS ]->(Status2),
+  (UUsers)-[:ABOUT_USER]->(Anonim490)-[:LEARN ]->(Course7)-[:STUDY_STATUS ]->(Status1)-[:STUDY_RATING]->(Rating4),
+  (UUsers)-[:ABOUT_USER]->(Anonim491)-[:LEARN ]->(Course10)-[:STUDY_STATUS]->(Status2),
+
+
+
+
+
+
+
+
+//WITH CCourses as a
+//MATCH (a)-[:COURSE_IS]->(b)-[:STUDY]->(d) RETURN a,b,d LIMIT 1000;
+
+//MATCH (n) WHERE HAS (n.NAME_1) RETURN n
+
+WITH RRegions as n
+MATCH (n)-[:NAME]->(b) RETURN n,b LIMIT 1000;
