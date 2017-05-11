@@ -10,6 +10,8 @@
 <script src="{% static 'search_site/loadJSON.js' %}"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="{% static 'search_site/jquery.min.js'%}"></script>	
+
 {% comment %}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
@@ -57,8 +59,7 @@ body{background-color:white ; width:100%}
 
 
 <header>
-{#<H3 style="font: bold 25pt Georgia verdana italic;text-align:center; color:#14126e;margin-top:20px"> Информация об online-курсах </H3>#}
-    <p style = "margin-top:10px; text-align: center"><img  src= "{% static "search_site/fon_zag3.png" %}"></p>
+    <p style = "margin-top:10px; text-align: center"><img  src= "{% static "search_site/fon_zag4.png" %}"></p>
 </header>
 
 <header1>
@@ -334,15 +335,37 @@ legend.onAdd = function (map) {
 legend.addTo(map);
 
 
+$(document).ready(function(){
+
+   $("#but1").click(function(){ $("#par1").fadeOut(3000)});
+   $("#but2").click(function(){ $("#par1").fadeIn(3000)});
+   $("#but2").click(function(){ $("#par2").fadeOut(3000)});
+   $("#but1").click(function(){ $("#par2").fadeIn(3000)});
+
+});	
+	
+	
 </script>
 
 
- <div id="popularity" style="float:right; width: 40%;top:-10%; height: 300px; text-align: right"><h3>Здесь будет отображаться распределение оценок по региону</h3></div>
- <div id="age" style="float:right; width: 40%;margin-left: 50%; margin-top: -15%; height: 320px; text-align: right"><h3>Здесь будет отображаться возраст студентов по региону</h3> </div>
+ <div id="thisblock" style=" margin-top: -3.5%; text-align: center; position:relative; float:right; width: 45%;">
+<input id="but1" type="button" value="1 Страница" />
+<input id="but2" type="button" value="2 Страница" />
+</div>
 
 
+<aside >
+<div id="par1">
+<div id="popularity" style="float:right; width: 45%;top:-15%; height: 300px; text-align: center"></div>
+<div id="age" style="float:right; width: 45%;margin-left: 50%; margin-top: -15%; height: 320px; text-align: center"></div>
+</div>
+</aside>
 
-
+<article>
+<div id="par2" >
+<div style="float:right; width: 45%;top:-15%; text-align: center"><img  src= "{% static "search_site/graph country-student.png" %}"></div>
+</div>
+</article>
 
 </BODY>
 </HTML>
