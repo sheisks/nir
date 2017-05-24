@@ -13,7 +13,13 @@ def index(request):
     return HttpResponse(s)
 
 def html(request):
-    return render(request, "search_site/post_list2.html", {});
+    cntx = {'diagram_data': str(get_students_per_course_and_region()),
+			'map_data': str(get_students_per_region()),
+			'diagram_data2': str(get_rating_per_region()),
+            'diagram_data3': str(get_age_per_region()),
+            'histogram1': str(get_age_per_region2())}
+    return render(request, "search_site/post_list2.html", Context(cntx,autoescape=False))
+
 def html_page(request):
     return render(request, "search_site/chart1.html", {});
 
