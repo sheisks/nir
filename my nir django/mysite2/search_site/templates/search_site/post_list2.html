@@ -46,7 +46,7 @@
     margin-right: 8px;
     opacity: 0.7;
 }
-body{background-color:white ; width:100%}
+body{background-color:white ; width:100% ; overflow: hidden}
 
  #header1 {width:100%;
           height:20px;
@@ -128,15 +128,13 @@ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 function getSomeColor(d) {
-     if (typeof d != 'undefined') {
-          return d >= 10000 ? '#800026' :
-                 d >= 5000 ?  '#BD0026' :
-                 d >= 1000  ? '#E31A1C' :
-                 d >= 500 ?   '#FC4E2A' :
-                 d >= 100 ?   '#FD8D3C' :
-                 d >= 50 ?    '#FEB24C' :
-                 d >= 10  ?   '#FED976' :
-                              '#FFEDA0';
+     if (typeof d != 'нет') {
+          return d >= 40 ?   '#800026' :
+                 d >= 30 ?   '#BD0026' :
+                 d >= 20 ?   '#E31A1C' :
+                 d >= 10 ?   '#FC4E2A' :
+                 d >= 5 ?    '#FD8D3C' :
+                             '#FFEDA0';
 
     }
     else
@@ -158,16 +156,17 @@ function style(feature) {
 }
 
 
-var regionData = loadJSONsync("https://raw.githubusercontent.com/Kreozot/russian-geo-data/master/geo.json");
+var regionData = loadJSONsync("{% static "search_site/russian-geo-data.json" %}");
 
+var pdata = {{ map_data }};
 for (var i=0; i < regionData.features.length; i++) {
      //ключевное поле
     var key = regionData.features[i].properties.ID_1;
 
      // ищем регион
-     if (key in peopleData) {
+     if (key in pdata) {
      // добавляем значение
-        regionData.features[i].properties['people'] = peopleData[key].value;
+        regionData.features[i].properties['people'] = pdata[key].value;
        // console.log(key);
   }
 }
@@ -176,27 +175,26 @@ var geodata = L.geoJSON(regionData, {style: style, onEachFeature: onEachFeature}
 geodata.addTo(map);
 
 
+//111111111111
 function drawPieChart(region_name) {
-   var chdata = new Array(['Оценка', 'Число оценок']);
 
-   for (var key in peopleData) {
-     if (peopleData[key].NAME_1 == region_name) {
-       chdata.push(['Пятерок', peopleData[key].rating5]);
-       chdata.push(['Четверок', peopleData[key].rating4]);
-       chdata.push(['Троек', peopleData[key].rating3]);
-       chdata.push(['Двоек', peopleData[key].rating2]);
+   var rawdata = new Array({{ diagram_data }});
+   var chdata = new Array(['Курс', 'Число студентов']);
+
+   for (var i=0; i < rawdata[0].length; ++i) {
+     if (rawdata[0][i][0] == region_name) {
+       chdata.push([rawdata[0][i][1], rawdata[0][i][2]]);
      }
    }
-
-   console.log(region_name);
-   //alert(chdata);
+   //console.log(region_name);
+   console.log(chdata);
 
    google.charts.load('current', {'packages':['corechart']});
    google.charts.setOnLoadCallback(drawChart);
    function drawChart() {
      var data1 = google.visualization.arrayToDataTable(chdata);
      var options = {
-       title: 'Распределение оценок по региону',
+       title: 'Число студентов на курсе по региону',
        titleTextStyle: { color:'black', fontSize: 14},
        is3D: true,
        slices: {  1: {offset: 0.4},
@@ -214,47 +212,115 @@ function drawPieChart(region_name) {
    }
  }
 
-  function drawPieChart2(region_name2) {
-      var chdata2 = new Array(['Возраст', 'Число студентов']);
+ //222222222222222
+ function drawPieChart2(region_name2) {
 
-      for (var key in peopleData) {
-          if (peopleData[key].NAME_1 == region_name2) {
-              chdata2.push(['15-17', peopleData[key].age15_17]);
-              chdata2.push(['18-25', peopleData[key].age18_25]);
-              chdata2.push(['26-30', peopleData[key].age26_30]);
-              chdata2.push(['31-40', peopleData[key].age31_40]);
-              chdata2.push(['41-60', peopleData[key].age41_60]);
-              chdata2.push(['61 и старше', peopleData[key].age61]);
-          }
-      }
+   var rawdata2 = new Array({{ diagram_data2 }});
+   var chdata2 = new Array(['Регион', 'Оценка']);
 
-      console.log(region_name2);
-      //alert(chdata);
-      google.charts.load('current', {'packages': ['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-          var data2 = google.visualization.arrayToDataTable(chdata2);
+   for (var i=0; i < rawdata2[0].length; ++i) {
+     if (rawdata2[0][i][0] == region_name2) {
+       chdata2.push([rawdata2[0][i][1], rawdata2[0][i][2]]);
+     }
+   }
 
-          var options = {
-              title: 'Возраст студентов по региону',
-              titleTextStyle: {color: 'black', fontSize: 14},
-              is3D: true,
-              slices: {
-                  1: {offset: 0.6},
-                  2: {offset: 0.3},
-                  5: {offset: 0.4},
-                  6: {offset: 0.5},
-              },
-{#              chartArea: {left: 0, top: 5, width: '80%', height: 'auto'},#}
-              legend: {position: 'left', maxLines: 11, textStyle: {color: 'black', fontSize: 14}},
+   console.log(chdata2);
 
-          };
-          var chart = new google.visualization.PieChart(document.getElementById('age'));
-          console.log("draw!");
-          chart.draw(data2, options);
-      }
-  }
+   google.charts.load('current', {'packages':['corechart']});
+   google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+     var data2 = google.visualization.arrayToDataTable(chdata2);
+     var options = {
+       title: 'Распределение оценок по региону',
+       titleTextStyle: { color:'black', fontSize: 14},
+       is3D: true,
+       slices: {  1: {offset: 0.4},
+                     3: {offset: 0.3},
+                     2: {offset: 0.2},
 
+           },
+       legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 14}},
+
+     };
+     var chart = new google.visualization.PieChart(document.getElementById('rating'));
+     console.log("draw!");
+     chart.draw(data2, options);
+   }
+ }
+
+ //3333333333333333333
+function drawPieChart3(region_name3) {
+
+   var rawdata3 = new Array({{ diagram_data3 }});
+
+   var chdata3 = new Array(['Возраст', 'Количество']);
+
+        for (var i=0; i < rawdata3[0].length; ++i) {
+             if (rawdata3[0][i][0] == region_name3) {
+               chdata3.push([rawdata3[0][i][1],rawdata3[0][i][2]]);
+             }
+           }
+
+   console.log( chdata3);
+
+
+   google.charts.load('current', {'packages':['corechart']});
+   google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+     var data3 = google.visualization.arrayToDataTable( chdata3);
+     var options = {
+       title: 'Возраст студентов по региону',
+       titleTextStyle: { color:'black', fontSize: 14},
+       is3D: true,
+       slices: {  1: {offset: 0.4},
+                     3: {offset: 0.3},
+                     2: {offset: 0.2}
+           },
+       legend:{position: 'left', maxLines:11, textStyle: {color: 'black', fontSize: 14}},
+
+     };
+     var chart = new google.visualization.PieChart(document.getElementById('age'));
+     console.log("draw3!");
+     chart.draw(data3, options);
+   }
+ }
+
+ //44444444444444444444444444
+function drawPieChart4(region_name4) {
+
+    var rawdata4 = new Array({{ histogram1 }});
+    var chdata4 = new Array(['Возраст', 'Количество студентов данного возраста']);
+
+    for (var i = 0; i < rawdata4[0].length; ++i) {
+        if (rawdata4[0][i][0] == region_name4) {
+            chdata4.push([rawdata4[0][i][1], rawdata4[0][i][2]]);
+        }
+    }
+
+    console.log(chdata4);
+
+    google.charts.load('current', {'packages': ['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var data4 = google.visualization.arrayToDataTable(chdata4);
+        var options = {
+            title: '',
+            legend: { position: 'top', maxLines: 2 },
+            colors: ['#5C3292'],
+            interpolateNulls: false,
+            series: {
+                0:{color: '#5C3292', },
+                    },
+            vAxis: { viewWindowMode:'maximized' },
+            hAxis: {viewWindowMode:'maximized'}
+
+        };
+
+        var chart = new google.visualization.Histogram(document.getElementById('histogram'));
+        console.log("draw4!");
+        chart.draw(data4, options);
+    }
+}
 
 function highlightFeature(e) {
     var layer = e.target;
@@ -283,6 +349,8 @@ function zoomToFeature(e) {
     var layer = e.target;
     drawPieChart(layer.feature.properties.NAME_1);
     drawPieChart2(layer.feature.properties.NAME_1);
+    drawPieChart3(layer.feature.properties.NAME_1);
+    drawPieChart4(layer.feature.properties.NAME_1);
 }
 
 function onEachFeature(feature, layer) {
@@ -319,7 +387,7 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 10, 50, 100, 500, 1000, 5000, 10000],
+        grades = [0, 5, 10, 20, 30, 40],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval
@@ -356,14 +424,15 @@ $(document).ready(function(){
 
 <aside >
 <div id="par1">
-<div id="popularity" style="float:right; width: 45%;top:-15%; height: 300px; text-align: center"></div>
-<div id="age" style="float:right; width: 45%;margin-left: 50%; margin-top: -15%; height: 320px; text-align: center"></div>
+<div id="popularity" style=" position:static;float:right; width: 45%;top:-15%; height: 300px; text-align: center"></div>
+<div id="rating" style="float:right; width: 45%;margin-left: 50%; margin-top: -15%; height: 320px; text-align: center"></div>
 </div>
 </aside>
 
 <article>
 <div id="par2" >
-<div style="float:right; width: 45%;top:-15%; text-align: center"><img  src= "{% static "search_site/graph country-student.png" %}"></div>
+<div id="age" style="float:right; width: 45%;top:-15%; height: 300px; text-align: center"></div>
+<div id="histogram" style="float:right; width: 45%;margin-left: 50%; margin-top: -15%; height: 320px; text-align: center"></div>
 </div>
 </article>
 
